@@ -1,6 +1,16 @@
-### What is Blockchain?
-#### Blockchain is a decentralized distributed ledger (data structure) where data is being stored inside blocks in form of transactions
+### Ask not “How can we make the Web infrastructure smarter?” 
+## But ask “What can the Web infrastructure provide to improve the consistency and availability of Web data?"
 
+* ### A Connected Web Is a Smarter Web.
+#### When we speak of “semantics” of natural language, we often refer to something about what it means to understand the utterance—how to go from the structured letters or sounds in a language to some kind of meaning behind them.
+
+* That is, given that symbols can refer to things in the world, how can we build models from those symbols that help us to capture, understand, and communicate what we know about relationships between those things?
+
+* In the Semantic Web we refer to the things in the world as resources; a resource can be anything that someonemight want to talk about. Shakespeare, Stratford, “the value of X,” and “all the cows in Texas” are all examples of things someonemight talk about and that can be resources in the SemanticWeb.
+
+is symbols can refer to things in the world, how can we
+build models from those symbols that help us to capture, understand, and
+communicate what we know about relationships between those things?
 Blockchain is a data structure, which is arrange of data in computer memory, such as Excel sheet, Google Doc and PDF files.
 
 Suppose that we have a book, in which each page make reference for the previous page through a page number one less than a current page number. We can detect and identify the removal of a page when a page has been removed through the page number.
