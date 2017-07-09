@@ -55,13 +55,29 @@ Followings are all examples of things someonemight talk about and that can be re
 ![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf3.JPG)
 
 > @prefix lec: <http://hpi-web.de/Lecture#> .
-
 > <http://hpi.web.de/Spring14#KE>
-
 > lec:name “Knowledge Engineering“^^<http://www.w3c.org/2001/XMLSchema#string> ;
-
 > lec:hours “4“^^<http://www.w3c.org/2001/XMLSchema#integer> .
 
+* Anonymous Blank Nodes
+
+![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf4.JPG)
+
+> @prefix hpi-lv: <http://hpi-web.de/Lecture#>.
+> <http://hpi-web.de/Spring14#KE> hpi-lv:name "Knowledge Engineering";
+> hpi-lv:takesPlace [
+> hpi-lv:date "Tue 13.30-15.00";
+> hpi-lv:room "HS3" ] .
+
+* Deferencable Blank Nodes
+
+![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf5.JPG)
+
+> @prefix hpi-lv: <http://hpi-web.de/Lecture#>.
+> <http://hpi-web.de/Spring14#KE> hpi-lv:name "Knowledge Engineering";
+> hpi-lv:takesPlace _:ID1 .
+> _:ID1 hpi-lv:date "Tue 13.30-15.00";
+> hpi-lv:room "HS3" .
 
 ### 3. RDF/XML Notation
 
