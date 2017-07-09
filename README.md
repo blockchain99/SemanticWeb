@@ -165,7 +165,7 @@ RDFSchema allows:
 
 • Subproperties and superproperties
 
-• Classes
+Classes are as follows.
 
   • rdfs:Class is Concept of a class, defines an abstract object and is applied (with rdf:type) to create instances
  
