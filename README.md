@@ -11,7 +11,7 @@
 * In the Semantic Web we refer to the things in the world as resources; a resource can be anything that someonemight want to talk about.
 Followings are all examples of things someonemight talk about and that can be resources in the SemanticWeb.
 
-> Subject X is "Harald" and Object(Literal) Y is "++49-331-5509-927",<br /> which is “the value of X,” and Predicate, P is “phone”
+> Subject X is "Harald" and Object(Literal) Y is "++49-331-5509-927",<br /> &ensp; which is “the value of X,” and Predicate, P is “phone”
 > Subject X is "Harald" and Object(Resource) Y is "http://harald.blogspot.com/",<br /> which is “the value of X,” and Predicate, P is “weblog”
 
 ![semantic web graph]({{http://www.patternics.com}}/SemanticWeb/image/rdf1.JPG)
