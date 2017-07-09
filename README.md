@@ -1,7 +1,7 @@
 ### Ask not “How can we make the Web infrastructure smarter?” 
 ## But ask “What can the Web infrastructure provide to improve the consistency and availability of Web data?"
 A Connected Web Is a Smarter Web.<BR>
-<BLOCKQUOTE>“we need a Web infrastructure that lets us connect data to smart Web applications <BR>
+<BLOCKQUOTE>“we need a Web infrastructure that lets us connect data to smart Web applications
 so that the whole Web experience is enhanced. The Web seems smarter because smart applications can get the data they need.
 </BLOCKQUOTE>
 
