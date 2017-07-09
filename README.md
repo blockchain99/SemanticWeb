@@ -117,18 +117,19 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 ### 3. RDF/XML Notation
 
-> <xml version=“1.0“ encoding=“utf-8“><br />
-> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#“<br />
-> xmlns:foaf=“http://xmlns.com/foaf/0.1/“ ><br />
-> <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“><br />
-> <foaf:phone>++49-331-5509-927</foaf:phone><br />
-> </rdf:Description><br />
-> <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“><br />
-> <foaf:weblog><br />
+> <xml version=“1.0“ encoding=“utf-8“> <br />
+> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#“ <br />
+> xmlns:foaf=“http://xmlns.com/foaf/0.1/“ > <br />
+> <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“> <br />
+> <foaf:phone>++49-331-5509-927</foaf:phone> <br />
+> </rdf:Description> <br />
+> <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“> <br />
+> <foaf:weblog> <br />
 > <rdf:Description rdf:about=“http://haraldblogspot.com/“></rdf:Description><br />
-> </foaf:weblog><br />
-> </rdf:Description><br />
+> </foaf:weblog> <br />
+> </rdf:Description> <br />
 > </rdf:RDF>
+
 
 > @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .<br />
 > @prefix lv: <http://hpi-web.de/Lecture#> .<br />
