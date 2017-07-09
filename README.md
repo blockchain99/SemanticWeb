@@ -165,7 +165,7 @@ RDFSchema allows:
 
 • Subproperties and superproperties
 
-Classes are as follows.
+1. Classes are as follows.
 
   • rdfs:Class is Concept of a class, defines an abstract object and is applied (with rdf:type) to create instances
  
@@ -177,11 +177,48 @@ Classes are as follows.
   
   • and additionally,Threre are rdfs:Datatype, rdf:XMLLiteral, rdfs:Container, rdfs:ContainerMembershipProperty in Classes.
 
+2. Properties are as follows.
+
+![RDF-property]({{http://www.patternics.com}}/SemanticWeb/image/prop.JPG)
+
+• rdfs:subClassOf is transitive property to define inheritance hierarchies for classes
+
+• rdfs:subPropertyOf is transitive property to define inheritance hierarchies for properties
+
+• rdfs:domain is defines the domain of a property concerning a class
+
+• rdfs:range is defines range of a property concerning a class
+
+![RDF-property2]({{http://www.patternics.com}}/SemanticWeb/image/prop2.JPG)
 
 is symbols can refer to things in the world, how can we
 build models from those symbols that help us to capture, understand, and
 communicate what we know about relationships between those things?
 Blockchain is a data structure, which is arrange of data in computer memory, such as Excel sheet, Google Doc and PDF files.
+
+![RDF-property3]({{http://www.patternics.com}}/SemanticWeb/image/prop3.JPG)
+
+> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+> @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+> @prefix : <http://example.org/>.
+> :Lecture a rdfs:Class;
+> rdfs:subClassOf :Course.
+> :Seminar a rdfs:Class ;
+> rdfs:subClassOf :Course.
+> :Person a rdfs:Class .
+> :Staff a rdfs:Class ;
+> rdfs:subClassOf :Person .
+> :SeniorResearcher a rdfs:Class ;
+> rdfs:subClassOf :Staff .
+> :Professor a rdfs:Class ;
+> rdfs:subClassOf :Staff.
+> :isManagedBy a rdf:Property ;
+> rdfs:domain :Course ;
+> rdfs:range :Staff .
+> <Spring14#KE> a :Lecture .
+> :HaraldSack a :SeniorResearcher .
+> <Spring14#KE> :isManagedBy :HaraldSack .
+
 
 Suppose that we have a book, in which each page make reference for the previous page through a page number one less than a current page number. We can detect and identify the removal of a page when a page has been removed through the page number.
 
