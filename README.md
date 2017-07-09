@@ -56,10 +56,13 @@ miners using a contract etc.
 * Contract-specific features include modifier (guard) clauses, event notifiers for listeners, and custom global variables.
 * Solidity is compiled to bytecode that is executable on the EVM
 
+# Click below link for Ethereum Solidity programming, Bitcoin Programming !
+
 ## [Making New Cryptocurrency using Ethereum Blockchain and SOLIDITY](http://www.patternics.com/blockchain/create_new_cryptocurrency)
 
 ## [Smart Contract programming using Ethereum SOLIDITY](http://www.patternics.com/blockchain/smart_contract)
 
+## [Bitcoin concept and programming](http://www.patternics.com/blockchain/bitcoin)
 
 ## Installation and usage
 Program is written in java, solidity. it one may need solidity shoulde be installed ( https://docs.continuum.io/anaconda/install ) or install python 2.7 and then install Numpy, Scipy, Pandas, matplotlib,jupyter manually as follows.
