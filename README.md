@@ -4,7 +4,7 @@
 * ### A Connected Web Is a Smarter Web.
 * “we need a Web infrastructure that lets us connect data to smart Web applications so that the whole Web experience is enhanced. The Web seems smarter because smart applications can get the data they need.
 
-#### When we speak of “semantics” of natural language, we often refer to something about what it means to understand the utterance—how to go from the structured letters or sounds in a language to some kind of meaning behind them.
+### When we speak of “semantics” of natural language, we often refer to something about what it means to understand the utterance—how to go from the structured letters or sounds in a language to some kind of meaning behind them.
 
 * That is, given that symbols can refer to things in the world, how can we build models from those symbols that help us to capture, understand, and communicate what we know about relationships between those things?
 
@@ -12,7 +12,9 @@
 
 ### From a technical point of view, the Semantic Web consists primarily of three technical standards:
 •	RDF (Resource Description Framework): The data modeling language for the Semantic Web. All Semantic Web information is stored and represented in the RDF.
+
 •	SPARQL (SPARQL Protocol and RDF Query Language): The query language of the Semantic Web. It is specifically designed to query data across various systems.
+
 •	OWL (Web Ontology Language) The schema language, or knowledge representation (KR) language, of the Semantic Web. OWL enables you to define concepts composably so that these concepts can be reused as much and as often as possible. Composability means that each concept is carefully defined so that it can be selected and assembled in various combinations with other concepts as needed for many different applications and purposes.
 
 
