@@ -35,10 +35,24 @@ Followings are all examples of things someonemight talk about and that can be re
 > <#harald> foaf:phone “++49-331-5509-927“ .
 > <#harald> foaf:weblog <http://harald.blogspot.com/> .
 
+* Below "Turtle Notation with ;" has same result with above Trutle Notation : semicolon indicates that subsequent triples have the same subject
+
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> @base <http://harald.sack.de/foaf.rdf>
+> <#harald> foaf:phone “++49-331-5509-527“ ; foaf:weblog <http://semweb2014.blogspot.com/> .
+
+![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf2.JPG)
+
+* comma indicates that subsequent triples have same subject and property (object list)
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> <#harald> foaf:weblog <http://semweb2014.blogspot.com/> ,
+> <http://semweb2013.blogspot.com/> ,
+> <http://semweb2012.blogspot.com/> .
+
 ### 3. RDF/XML Notation
 > <xml version=“1.0“ encoding=“utf-8“>
 > <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#“
-v xmlns:foaf=“http://xmlns.com/foaf/0.1/“ >
+> xmlns:foaf=“http://xmlns.com/foaf/0.1/“ >
 > <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“>
 > <foaf:phone>++49-331-5509-927</foaf:phone>
 > </rdf:Description>
