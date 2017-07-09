@@ -12,6 +12,8 @@ so that the whole Web experience is enhanced. The Web seems smarter because smar
 * In the Semantic Web we refer to the things in the world as resources; a resource can be anything that someonemight want to talk about.
 Followings are all examples of things someonemight talk about and that can be resources in the SemanticWeb.
 
+### There are three ways of Semantic Web notations as follows.
+
 > Subject X is "Harald" and Object(Literal) Y is "++49-331-5509-927", which is “the value of X,” and Predicate, P is “phone”
 
 > Subject X is "Harald" and Object(Resource) Y is "http://harald.blogspot.com/", which is “the value of X,” and Predicate, P is “weblog”
@@ -116,7 +118,6 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 
 ### 3. RDF/XML Notation
-
 > <xml version=“1.0“ encoding=“utf-8“> <br />
 > <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#“ <br />
 > xmlns:foaf=“http://xmlns.com/foaf/0.1/“ > <br />
@@ -201,25 +202,25 @@ Blockchain is a data structure, which is arrange of data in computer memory, suc
 
 ![RDF-property3]({{http://www.patternics.com}}/SemanticWeb/image/prop3.JPG)
 
-> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-> @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-> @prefix : <http://example.org/>.
-> :Lecture a rdfs:Class;
-> rdfs:subClassOf :Course.
-> :Seminar a rdfs:Class ;
-> rdfs:subClassOf :Course.
-> :Person a rdfs:Class .
-> :Staff a rdfs:Class ;
-> rdfs:subClassOf :Person .
-> :SeniorResearcher a rdfs:Class ;
-> rdfs:subClassOf :Staff .
-> :Professor a rdfs:Class ;
-> rdfs:subClassOf :Staff.
-> :isManagedBy a rdf:Property ;
-> rdfs:domain :Course ;
-> rdfs:range :Staff .
-> <Spring14#KE> a :Lecture .
-> :HaraldSack a :SeniorResearcher .
+> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . <br />
+> @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .<br />
+> @prefix : <http://example.org/>.<br />
+> :Lecture a rdfs:Class;<br />
+> rdfs:subClassOf :Course.<br />
+> :Seminar a rdfs:Class ;<br />
+> rdfs:subClassOf :Course.<br />
+> :Person a rdfs:Class .<br />
+> :Staff a rdfs:Class ;<br />
+> rdfs:subClassOf :Person .<br />
+> :SeniorResearcher a rdfs:Class ;<br />
+> rdfs:subClassOf :Staff .<br />
+> :Professor a rdfs:Class ;<br />
+> rdfs:subClassOf :Staff.<br />
+> :isManagedBy a rdf:Property ;<br />
+> rdfs:domain :Course ;<br />
+> rdfs:range :Staff .<br />
+> <Spring14#KE> a :Lecture .<br />
+> :HaraldSack a :SeniorResearcher .<br />
 > <Spring14#KE> :isManagedBy :HaraldSack .
 
 
