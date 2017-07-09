@@ -50,7 +50,21 @@ Followings are all examples of things someonemight talk about and that can be re
 > <http://semweb2013.blogspot.com/> ,
 > <http://semweb2012.blogspot.com/> .
 
+* Typed literal
+
+![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf3.JPG)
+
+> @prefix lec: <http://hpi-web.de/Lecture#> .
+
+> <http://hpi.web.de/Spring14#KE>
+
+> lec:name “Knowledge Engineering“^^<http://www.w3c.org/2001/XMLSchema#string> ;
+
+> lec:hours “4“^^<http://www.w3c.org/2001/XMLSchema#integer> .
+
+
 ### 3. RDF/XML Notation
+
 > <xml version=“1.0“ encoding=“utf-8“>
 > <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#“
 > xmlns:foaf=“http://xmlns.com/foaf/0.1/“ >
@@ -66,28 +80,22 @@ Followings are all examples of things someonemight talk about and that can be re
 
 
 ### From a technical point of view, the Semantic Web consists primarily of three technical standards:
+
 •	RDF (Resource Description Framework): The data modeling language for the Semantic Web. All Semantic Web information is stored and represented in the RDF.
 
 •	SPARQL (SPARQL Protocol and RDF Query Language): The query language of the Semantic Web. It is specifically designed to query data across various systems.
 
 •	OWL (Web Ontology Language) The schema language, or knowledge representation (KR) language, of the Semantic Web. OWL enables you to define concepts composably so that these concepts can be reused as much and as often as possible. Composability means that each concept is carefully defined so that it can be selected and assembled in various combinations with other concepts as needed for many different applications and purposes.
 
-
-
 ### * With data-backed Web applications, the Semantic Web infrastructure allows the data to drive the presentation so that various webpages (presentations) can provide views into a consistent body of information. In this way, the Semantic Web helps data not be so dumb.
 
 ### Semantic Web / Linked Data as a distributed framework for the cutting edge technologies.
 ### 1. “The suite of technologies developed in the Semantic Web … such as ontologies, semantic annotation, Linked Data and semantic Web services … can be used as principal solutions for the purpose of realizing the IoT,” they state. “Defining an ontology and using semantic descriptions for data will make it interoperable for users and stakeholders that share and use the same ontology.”
-* 
-
-### 
 
 
 
 
 
-
----------------------------------------------------------------
 is symbols can refer to things in the world, how can we
 build models from those symbols that help us to capture, understand, and
 communicate what we know about relationships between those things?
