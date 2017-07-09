@@ -220,6 +220,21 @@ Blockchain is a data structure, which is arrange of data in computer memory, suc
 > <Spring14#KE> :isManagedBy :HaraldSack .
 
 
+### What conclusions can we deduce with RDF(S)?
+
+![RDF-property4]({{http://www.patternics.com}}/SemanticWeb/image/prop4.JPG)
+
+## Click Following link for further SPARQL(Protocol and RDF Query Language) Progamming
+
+
+
+• A Query Language for RDF Graph Traversal (SPARQL Query Language Specification)
+
+• A Protocol Layer, to use SPARQL via http (SPARQL Protocol for RDF Specification)
+
+• An XML Output Format Specification for SPARQL Queries (SPARQL Query XML Results Format)
+
+
 Suppose that we have a book, in which each page make reference for the previous page through a page number one less than a current page number. We can detect and identify the removal of a page when a page has been removed through the page number.
 
 | Book Ordering | Block Ordering |
