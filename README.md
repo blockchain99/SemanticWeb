@@ -12,8 +12,43 @@
 Followings are all examples of things someonemight talk about and that can be resources in the SemanticWeb.
 
 > Subject X is "Harald" and Object(Literal) Y is "++49-331-5509-927", which is “the value of X,” and Predicate, P is “phone”
-> Subject X is "Harald" and Object(Resource) Y is "++49-331-5509-927", which is “the value of X,” and Predicate, P is “phone”
+> Subject X is "Harald" and Object(Resource) Y is "http://harald.blogspot.com/", which is “the value of X,” and Predicate, P is “weblog”
 ![semantic web graph]({{http://www.patternics.com}}/SemanticWeb/image/rdf1.JPG)
+
+### 1.  N-Triples Notation
+
+• URIs/IRIs in angle brackets
+
+• Literals in quotation marks
+
+• Triple ends with a period
+
+< <http://harald.sack.de/foaf.rdf#harald> <http://xmlns.com/foaf/0.1/phone> “+
+< +49-331-5509-927“ .
+< <http://harald.sack.de/foaf.rdf#harald> <http://xmlns.com/foaf/0.1/weblog>
+< <http://harald.blogspot.com/> .
+
+### 2. Turtle (Terse RDF Tripel Language) Notation
+< @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+< @base <http://harald.sack.de/foaf.rdf>
+< <#harald> foaf:phone “++49-331-5509-927“ .
+< <#harald> foaf:weblog <http://harald.blogspot.com/> .
+
+### 3. RDF/XML Notation
+< <xml version=“1.0“ encoding=“utf-8“>
+< <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#“
+< xmlns:foaf=“http://xmlns.com/foaf/0.1/“ >
+< <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“>
+< <foaf:phone>++49-331-5509-927</foaf:phone>
+< </rdf:Description>
+< <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“>
+< <foaf:weblog>
+< <rdf:Description rdf:about=“http://haraldblogspot.com/“></rdf:Description>
+< </foaf:weblog>
+< </rdf:Description>
+< </rdf:RDF>
+
+
 
 
 ### From a technical point of view, the Semantic Web consists primarily of three technical standards:
