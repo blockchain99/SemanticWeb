@@ -79,6 +79,40 @@ Followings are all examples of things someonemight talk about and that can be re
 > _:ID1 hpi-lv:date "Tue 13.30-15.00";
 > hpi-lv:room "HS3" .
 
+#### * RDF-Collection
+
+![RDF-Collection]({{http://www.patternics.com}}/SemanticWeb/image/rdf6.JPG)
+
+> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+> @prefix lv: <http://hpi-web.de/Lecture#> .
+> @base <http://hpi-web.de/>.
+> <Sprint14#KE> lv:hasParticipant [
+> rdf:first <BurgerAnton>; rdf:rest [
+> rdf:first <MuellerFranz>; rdf:rest [
+> rdf:first <SchmidtJoseph>; rdf:rest [
+> rdf:first <SchulzeEgon>;
+> rdf:rest rdf:nil
+> ] ] ] ] .
+
+#### * RDF-Reification
+
+rdf:Statement defines an RDF Statement, consisting of Subject, Predicate and Object
+
+![RDF-statement]({{http://www.patternics.com}}/SemanticWeb/image/rdf_st.JPG)
+
+Sherlock Holmes supposes that the Gardener has killed the Butler
+
+![RDF-statement]({{http://www.patternics.com}}/SemanticWeb/image/rdf_st2.JPG)
+
+> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+> @prefix : <http://example.org/Crimestories#> .
+> :SherlockHolmes :supposes :StatementOnGardener .
+> :StatementOnGardener a rdf:Statement ;
+> rdf:subject :Gardener ;
+> rdf:predicate :hasKilled ;
+> rdf:object :Butler .
+
+
 ### 3. RDF/XML Notation
 
 > <xml version=“1.0“ encoding=“utf-8“>
@@ -94,6 +128,11 @@ Followings are all examples of things someonemight talk about and that can be re
 > </rdf:Description>
 > </rdf:RDF>
 
+> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+> @prefix lv: <http://hpi-web.de/Lecture#> .
+> @base <http://hpi-web.de/>.
+> <Spring14#KE> lv:hasParticipant (<BurgerAnton> <MuellerFranz>
+> <SchmidtJoseph> <SchulzeEgon>).
 
 ### From a technical point of view, the Semantic Web consists primarily of three technical standards:
 
@@ -108,8 +147,36 @@ Followings are all examples of things someonemight talk about and that can be re
 ### Semantic Web / Linked Data as a distributed framework for the cutting edge technologies.
 ### 1. “The suite of technologies developed in the Semantic Web … such as ontologies, semantic annotation, Linked Data and semantic Web services … can be used as principal solutions for the purpose of realizing the IoT,” they state. “Defining an ontology and using semantic descriptions for data will make it interoperable for users and stakeholders that share and use the same ontology.”
 
+## RDF Schema
 
+RDFSchema allows:
 
+• Definition of classes
+
+•Class instantiation in RDF via <rdf:type>
+
+• Definition of properties and restrictions
+
+• Definition of hierarchies
+
+•Subclasses and superclasses
+
+•Subproperties and superproperties
+
+•Classes
+
+  • rdfs:Class
+  Concept of a class, defines an abstract object and is applied (with rdf:type)
+  to create instances
+  • rdf:Property
+  Base class for properties
+  • rdfs:Literal
+  Class for literals
+  • rdfs:Resource
+  every entity of an RDF model is instance of this class
+  • and additionally
+  rdfs:Datatype, rdf:XMLLiteral, rdfs:Container,
+  rdfs:ContainerMembershipProperty
 
 
 is symbols can refer to things in the world, how can we
