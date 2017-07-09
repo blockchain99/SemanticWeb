@@ -30,24 +30,24 @@ Followings are all examples of things someonemight talk about and that can be re
 > <http://harald.blogspot.com/> .
 
 ### 2. Turtle (Terse RDF Tripel Language) Notation
-< @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-< @base <http://harald.sack.de/foaf.rdf>
-< <#harald> foaf:phone “++49-331-5509-927“ .
-< <#harald> foaf:weblog <http://harald.blogspot.com/> .
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> @base <http://harald.sack.de/foaf.rdf>
+> <#harald> foaf:phone “++49-331-5509-927“ .
+> <#harald> foaf:weblog <http://harald.blogspot.com/> .
 
 ### 3. RDF/XML Notation
-< <xml version=“1.0“ encoding=“utf-8“>
-< <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#“
-< xmlns:foaf=“http://xmlns.com/foaf/0.1/“ >
-< <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“>
-< <foaf:phone>++49-331-5509-927</foaf:phone>
-< </rdf:Description>
-< <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“>
-< <foaf:weblog>
-< <rdf:Description rdf:about=“http://haraldblogspot.com/“></rdf:Description>
-< </foaf:weblog>
-< </rdf:Description>
-< </rdf:RDF>
+> <xml version=“1.0“ encoding=“utf-8“>
+> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#“
+v xmlns:foaf=“http://xmlns.com/foaf/0.1/“ >
+> <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“>
+> <foaf:phone>++49-331-5509-927</foaf:phone>
+> </rdf:Description>
+> <rdf:Description rdf:about=“http://harald.sack.de/foaf.rdf#harald“>
+> <foaf:weblog>
+> <rdf:Description rdf:about=“http://haraldblogspot.com/“></rdf:Description>
+> </foaf:weblog>
+> </rdf:Description>
+> </rdf:RDF>
 
 
 
