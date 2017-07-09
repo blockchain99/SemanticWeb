@@ -44,6 +44,7 @@ Followings are all examples of things someonemight talk about and that can be re
 ![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf2.JPG)
 
 * comma indicates that subsequent triples have same subject and property (object list)
+
 > @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 > <#harald> foaf:weblog <http://semweb2014.blogspot.com/> ,
 > <http://semweb2013.blogspot.com/> ,
@@ -62,8 +63,6 @@ Followings are all examples of things someonemight talk about and that can be re
 > </foaf:weblog>
 > </rdf:Description>
 > </rdf:RDF>
-
-
 
 
 ### From a technical point of view, the Semantic Web consists primarily of three technical standards:
