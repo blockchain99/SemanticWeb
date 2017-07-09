@@ -166,8 +166,9 @@ RDFSchema allows:
 •Classes
 
   • rdfs:Class
-  Concept of a class, defines an abstract object and is applied (with rdf:type)
-  to create instances
+  
+  Concept of a class, defines an abstract object and is applied (with rdf:type) to create instances
+  
   • rdf:Property
   Base class for properties
   • rdfs:Literal
