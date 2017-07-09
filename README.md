@@ -13,6 +13,7 @@ Followings are all examples of things someonemight talk about and that can be re
 
 > Subject X is "Harald" and Object(Literal) Y is "++49-331-5509-927", which is “the value of X,” and Predicate, P is “phone”
 > Subject X is "Harald" and Object(Resource) Y is "http://harald.blogspot.com/", which is “the value of X,” and Predicate, P is “weblog”
+
 ![semantic web graph]({{http://www.patternics.com}}/SemanticWeb/image/rdf1.JPG)
 
 ### 1.  N-Triples Notation
@@ -23,10 +24,10 @@ Followings are all examples of things someonemight talk about and that can be re
 
 • Triple ends with a period
 
-< <http://harald.sack.de/foaf.rdf#harald> <http://xmlns.com/foaf/0.1/phone> “+
-< +49-331-5509-927“ .
-< <http://harald.sack.de/foaf.rdf#harald> <http://xmlns.com/foaf/0.1/weblog>
-< <http://harald.blogspot.com/> .
+> <http://harald.sack.de/foaf.rdf#harald> <http://xmlns.com/foaf/0.1/phone> “+
+> +49-331-5509-927“ .
+> <http://harald.sack.de/foaf.rdf#harald> <http://xmlns.com/foaf/0.1/weblog>
+> <http://harald.blogspot.com/> .
 
 ### 2. Turtle (Terse RDF Tripel Language) Notation
 < @prefix foaf: <http://xmlns.com/foaf/0.1/> .
