@@ -70,6 +70,10 @@ Followings are all examples of things someonemight talk about and that can be re
 
 
 
+
+
+
+---------------------------------------------------------------
 is symbols can refer to things in the world, how can we
 build models from those symbols that help us to capture, understand, and
 communicate what we know about relationships between those things?
