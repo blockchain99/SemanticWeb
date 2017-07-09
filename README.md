@@ -149,35 +149,33 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 ## RDF Schema
 
+![RDF-schema]({{http://www.patternics.com}}/SemanticWeb/image/rdfschema.JPG)
+
 RDFSchema allows:
 
 • Definition of classes
 
-•Class instantiation in RDF via <rdf:type>
+• Class instantiation in RDF via <rdf:type>
 
 • Definition of properties and restrictions
 
 • Definition of hierarchies
 
-•Subclasses and superclasses
+• Subclasses and superclasses
 
-•Subproperties and superproperties
+• Subproperties and superproperties
 
-•Classes
+• Classes
 
-  • rdfs:Class
+  • rdfs:Class is Concept of a class, defines an abstract object and is applied (with rdf:type) to create instances
+ 
+  • rdf:Propert is Base class for properties
   
-  Concept of a class, defines an abstract object and is applied (with rdf:type) to create instances
+  • rdfs:Literal is Class for literals
   
-  • rdf:Property
-  Base class for properties
-  • rdfs:Literal
-  Class for literals
-  • rdfs:Resource
-  every entity of an RDF model is instance of this class
-  • and additionally
-  rdfs:Datatype, rdf:XMLLiteral, rdfs:Container,
-  rdfs:ContainerMembershipProperty
+  • rdfs:Resource is every entity of an RDF model is instance of this class
+  
+  • and additionally,Threre are rdfs:Datatype, rdf:XMLLiteral, rdfs:Container, rdfs:ContainerMembershipProperty in Classes.
 
 
 is symbols can refer to things in the world, how can we
