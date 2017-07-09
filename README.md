@@ -10,6 +10,13 @@
 
 * In the Semantic Web we refer to the things in the world as resources; a resource can be anything that someonemight want to talk about. Shakespeare, Stratford, “the value of X,” and “all the cows in Texas” are all examples of things someonemight talk about and that can be resources in the SemanticWeb.
 
+### From a technical point of view, the Semantic Web consists primarily of three technical standards:
+•	RDF (Resource Description Framework): The data modeling language for the Semantic Web. All Semantic Web information is stored and represented in the RDF.
+•	SPARQL (SPARQL Protocol and RDF Query Language): The query language of the Semantic Web. It is specifically designed to query data across various systems.
+•	OWL (Web Ontology Language) The schema language, or knowledge representation (KR) language, of the Semantic Web. OWL enables you to define concepts composably so that these concepts can be reused as much and as often as possible. Composability means that each concept is carefully defined so that it can be selected and assembled in various combinations with other concepts as needed for many different applications and purposes.
+
+
+
 ### * With data-backed Web applications, the Semantic Web infrastructure allows the data to drive the presentation so that various webpages (presentations) can provide views into a consistent body of information. In this way, the Semantic Web helps data not be so dumb.
 
 ### Semantic Web / Linked Data as a distributed framework for the cutting edge technologies.
