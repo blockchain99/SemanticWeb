@@ -2,11 +2,23 @@
 ## But ask “What can the Web infrastructure provide to improve the consistency and availability of Web data?"
 
 * ### A Connected Web Is a Smarter Web.
+* “we need a Web infrastructure that lets us connect data to smart Web applications so that the whole Web experience is enhanced. The Web seems smarter because smart applications can get the data they need.
+
 #### When we speak of “semantics” of natural language, we often refer to something about what it means to understand the utterance—how to go from the structured letters or sounds in a language to some kind of meaning behind them.
 
 * That is, given that symbols can refer to things in the world, how can we build models from those symbols that help us to capture, understand, and communicate what we know about relationships between those things?
 
 * In the Semantic Web we refer to the things in the world as resources; a resource can be anything that someonemight want to talk about. Shakespeare, Stratford, “the value of X,” and “all the cows in Texas” are all examples of things someonemight talk about and that can be resources in the SemanticWeb.
+
+### * With data-backed Web applications, the Semantic Web infrastructure allows the data to drive the presentation so that various webpages (presentations) can provide views into a consistent body of information. In this way, the Semantic Web helps data not be so dumb.
+
+### Semantic Web / Linked Data as a distributed framework for the cutting edge technologies.
+### 1. “The suite of technologies developed in the Semantic Web … such as ontologies, semantic annotation, Linked Data and semantic Web services … can be used as principal solutions for the purpose of realizing the IoT,” they state. “Defining an ontology and using semantic descriptions for data will make it interoperable for users and stakeholders that share and use the same ontology.”
+* 
+
+### 
+
+
 
 is symbols can refer to things in the world, how can we
 build models from those symbols that help us to capture, understand, and
@@ -94,5 +106,7 @@ We provide up to date docker builds for the compiler. The stable repository cont
 > docker run ethereum/solc:stable solc --version
 
 ### Meta
+
+> Acknowledgement : Some images and articles are from other sites or materials: Amelie Gyrard: Christian Bonnet (Eurecom, Mobile Communication)
 
 Yoonsu Park - http://www.patternics.com Distributed under the MIT license. See LICENSE for more information( https://en.wikipedia.org/wiki/MIT_License ). https://github.com/blockchain99/blockchain
