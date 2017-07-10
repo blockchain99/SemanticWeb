@@ -1,0 +1,14 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+
+SELECT ?author (SAMPLE(?title) AS ?title_name)
+       (GROUP_CONCAT(?alt_titles; SEPARATOR=", ") AS ?title_alt_names)
+FROM <http://dbpedia.org/> 
+WHERE {
+  ?author rdf:type dbpedia-owl:Writer .
+  ?author dbpedia-owl:notableWork ?work .
+  ?work rdfs:label ?title .
+  ?work rdfs:label ?alt_titles
+  FILTER (LANG(?alt_titles)!="en") .
+} GROUP BY ?author
+LIMIT 100

@@ -1,0 +1,14 @@
+PREFIX : <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+SELECT ?author_name ?title ?pages 
+FROM <http://dbpedia.org/> 
+WHERE {
+   ?author rdf:type dbpedia-owl:Writer .
+   ?author rdfs:label ?author_name .
+   ?author dbpedia-owl:notableWork ?work .
+   ?work dbpedia-owl:numberOfPages ?pages 
+   FILTER (?pages > 500) .
+   ?work rdfs:label ?title .
+} LIMIT 100

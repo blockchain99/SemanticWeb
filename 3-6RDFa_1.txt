@@ -1,0 +1,30 @@
+<p vocab="http://xmlns.com/foaf/0.1/"
+prefix="ov: http://open.vocab.org/terms/"
+resource="#harald" typeof="Person">
+My name is
+<span property="name">Harald Sack</span>
+and you can give me a ring via
+<span property="phone">1-800-555-0527</span>.
+My favorite beverage is
+<span property="ov:preferredBeverage">Green Tea
+</span>.
+</p>
+
+<div vocab="http://schema.org/" typeof="Thing">
+  <a property ="iamge" href="https://wiki.duraspace.org/display/manu.png">
+    <span property="name">Manu Sporny</span></a>
+  <span property="jobTitle">Founder/CEO</span>
+  <div>
+    E-mail: <a property="email" href="mailto:msporny@digitaltest.com">mailto:msporny@digitaltest.com</a>
+  </div>
+  <div>
+    Links: <a property="url" href="https://wiki.duraspace.org">https://wiki.duraspace.org</a>
+  </div>
+</div>  
+    
+    
+    
+
+    
+    
+    

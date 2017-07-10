@@ -1,0 +1,11 @@
+PREFIX : <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+
+SELECT ?influencedByInfluencers
+FROM <http://dbpedia.org/> 
+WHERE {
+      :Ernest_Hemingway
+      dbpedia-owl:influencedBy/^dbpedia-owl:influencedBy
+      ?influencedByInfluencers .
+} 

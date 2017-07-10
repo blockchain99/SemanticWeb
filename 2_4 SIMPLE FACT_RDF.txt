@@ -1,0 +1,32 @@
+====== TURTLE ===
+@prefix hpi-lv: <http://hpi-web.de/Lecture#>.
+<http://hpi-web.de/Spring14#KE> hpi-lv:name "Knowledge Engineering";
+hpi-lv:takesPlace _:ID1 .
+_:ID1 hpi-lv:date "Tue 13.30 - 15:00";
+          hpi-lv:room "HS3" .
+
+
+====== RDF/XML OUTPUT ======
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://hpi-web.de/Lecture#">
+
+  <rdf:Description rdf:about="http://hpi-web.de/Spring14#KE">
+    <ns0:name>Knowledge Engineering</ns0:name>
+    <ns0:takesPlace>
+      <rdf:Description>
+        <ns0:date>Tue 13.30 - 15:00</ns0:date>
+        <ns0:room>HS3</ns0:room>
+      </rdf:Description>
+    </ns0:takesPlace>
+
+  </rdf:Description>
+
+</rdf:RDF>
+
+
+===== N-TRIPLE OUTPUT ====
+<http://hpi-web.de/Spring14#KE> <http://hpi-web.de/Lecture#name> "Knowledge Engineering" .
+<http://hpi-web.de/Spring14#KE> <http://hpi-web.de/Lecture#takesPlace> _:genid1 .
+_:genid1 <http://hpi-web.de/Lecture#date> "Tue 13.30 - 15:00" .
+_:genid1 <http://hpi-web.de/Lecture#room> "HS3" .
