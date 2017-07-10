@@ -497,23 +497,26 @@ There exist two property variants: object properties and datatype properties
 &emsp; &emsp; :literaryGenre :DystopianFiction .
 </blockquote> 
 
-### 1. OWL example
-@prefix : <http://example.com/owl/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-:HappyPerson a owl:Class ;
-    owl:equivalentClass [
-    a owl:Class ;
-    owl:intersectionOf ([ a owl:Restriction ;
-                                            owl:onProperty :hasChild ;
-                                            owl:allValuesFrom :HappyPerson ]
-                                         [ a owl:Restriction ;
-                                           owl:onProperty :hasChild ;
-                                           owl:someValuesFrom :HappyPerson ]
-                                          )
-                      ].
+
+### 1. OWL example<br>
+<blockquote>
+@prefix : <http://example.com/owl/> .<br>
+@prefix owl: <http://www.w3.org/2002/07/owl#> .<br>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .<br>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .<br>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .<br>
+:HappyPerson a owl:Class ;<br>
+&emsp;    owl:equivalentClass [<br>
+&emsp;    a owl:Class ;<br>
+&emsp;   owl:intersectionOf ([ a owl:Restriction ;<br>
+&emsp; &emsp; &emsp;                                             owl:onProperty :hasChild ;<br>
+&emsp; &emsp; &emsp;                                            owl:allValuesFrom :HappyPerson ]<br>
+&emsp; &emsp; &emsp;                                         [ a owl:Restriction ;<br>
+&emsp; &emsp; &emsp;                                           owl:onProperty :hasChild ;<br>
+&emsp; &emsp; &emsp;                                           owl:someValuesFrom :HappyPerson ]<br>
+&emsp; &emsp; &emsp;                                          )<br>
+&emsp; &emsp;                       ].<br>
+                      </blockquote>                     
 
 ![OWL1](./image/owl.JPG)
 
