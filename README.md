@@ -595,6 +595,12 @@ OWL provides a shortcut to define several individuals to be different<br>
 
 ## [Click for further SPARQL Progamming !](https://github.com/blockchain99/SemanticWeb)
 
+## [Click for EASYRDF Converter to explore RDF programming !](http://www.easyrdf.org/converter)
+
+##[Click for DBpedia SPARQL endpoint exercise !](dbpedia.org/sparql)
+
+##[Click for DBpedia SPARQL endpoint query exercise !](dbpedia.org/snorql)
+
 > Acknowledgement : Some images and articles are from other sites or materials: Amelie Gyrard: Christian Bonnet (Eurecom, Mobile Communication),Dr. Harald Sack : Hasso-Plattner-Institut for IT Systems Engineering, Dean Allemang : Semantic Web for the Working
 Ontologist
 
