@@ -239,9 +239,9 @@ PREFIX dbpprop: <http://dbpedia.org/property/> <br>
 SELECT ?author ?work ?date <br>
 FROM <http://dbpedia.org/> <br>
 WHERE {<br>
-?author rdf:type dbpedia-owl:Writer .<br>
-?author dbpedia-owl:notableWork ?work .<br>
-?work dbpprop:releaseDate ?date <br>
+&emsp; ?author rdf:type dbpedia-owl:Writer .<br>
+&emsp; ?author dbpedia-owl:notableWork ?work .<br>
+&emsp; ?work dbpprop:releaseDate ?date <br>
 } ORDER BY ?date<br>
 LIMIT 100         
 </blockquote>
