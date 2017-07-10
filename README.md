@@ -47,7 +47,7 @@ Followings are all examples of things someonemight talk about and that can be re
 > @base <http://harald.sack.de/foaf.rdf><br />
 > <#harald> foaf:phone “++49-331-5509-527“ ; foaf:weblog <http://semweb2014.blogspot.com/> .
 
-![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf2.JPG)
+![semantic web graph:rdf2](./image/rdf2.JPG)
 
 * comma indicates that subsequent triples have same subject and property (object list)
 
@@ -67,7 +67,7 @@ Followings are all examples of things someonemight talk about and that can be re
 
 * Anonymous Blank Nodes
 
-![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf4.JPG)
+![semantic web graph:rdf2](./image/rdf4.JPG)
 
 > @prefix hpi-lv: <http://hpi-web.de/Lecture#>.<br />
 > <http://hpi-web.de/Spring14#KE> hpi-lv:name "Knowledge Engineering";<br />
@@ -77,7 +77,7 @@ Followings are all examples of things someonemight talk about and that can be re
 
 * Deferencable Blank Nodes
 
-![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf5.JPG)
+![semantic web graph:rdf2](./image/rdf5.JPG)
 
 > @prefix hpi-lv: <http://hpi-web.de/Lecture#>.<br />
 > <http://hpi-web.de/Spring14#KE> hpi-lv:name "Knowledge Engineering";<br />
@@ -87,7 +87,7 @@ Followings are all examples of things someonemight talk about and that can be re
 
 #### * RDF-Collection
 
-![RDF-Collection]({{http://www.patternics.com}}/SemanticWeb/image/rdf6.JPG)
+![RDF-Collection](./image/rdf6.JPG)
 
 > @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .<br />
 > @prefix lv: <http://hpi-web.de/Lecture#> .<br />
@@ -104,11 +104,11 @@ Followings are all examples of things someonemight talk about and that can be re
 
 rdf:Statement defines an RDF Statement, consisting of Subject, Predicate and Object
 
-![RDF-statement]({{http://www.patternics.com}}/SemanticWeb/image/rdf_st.JPG)
+![RDF-statement](./image/rdf_st.JPG)
 
 Sherlock Holmes supposes that the Gardener has killed the Butler
 
-![RDF-statement]({{http://www.patternics.com}}/SemanticWeb/image/rdf_st2.JPG)
+![RDF-statement](./image/rdf_st2.JPG)
 
 > @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .<br />
 > @prefix : <http://example.org/Crimestories#> .<br />
@@ -188,7 +188,7 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 #### 2. Properties are as follows.
 
-![RDF-property]({{http://www.patternics.com}}/SemanticWeb/image/prop.JPG)
+![RDF-property](./image/prop.JPG)
 
 • rdfs:subClassOf is transitive property to define inheritance hierarchies for classes
 
@@ -198,9 +198,9 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 • rdfs:range is defines range of a property concerning a class
 
-![RDF-property2]({{http://www.patternics.com}}/SemanticWeb/image/prop2.JPG)
+![RDF-property2](./image/prop2.JPG)
 
-![RDF-property3]({{http://www.patternics.com}}/SemanticWeb/image/prop3.JPG)
+![RDF-property3](./image/prop3.JPG)
 
 > @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . <br />
 > @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .<br />
@@ -225,7 +225,7 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 ### What conclusions can we deduce with RDF(S)?
 
-![RDF-property4]({{http://www.patternics.com}}/SemanticWeb/image/prop4.JPG)
+![RDF-property4](./image/prop4.JPG)
 
 
 ## SPARQL Progrmming
