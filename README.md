@@ -14,6 +14,20 @@ Followings are all examples of things someonemight talk about and that can be re
 
 ### With data-backed Web applications, the Semantic Web infrastructure allows the data to drive the presentation so that various webpages (presentations) can provide views into a consistent body of information. In this way, the Semantic Web helps data not be so dumb.
 
+### From a technical point of view, the Semantic Web consists primarily of three technical standards:
+
+•	RDF (Resource Description Framework): The data modeling language for the Semantic Web. All Semantic Web information is stored and represented in the RDF.
+
+•	SPARQL (SPARQL Protocol and RDF Query Language): The query language of the Semantic Web. It is specifically designed to query data across various systems.
+
+&nbsp;  A Query Language for RDF Graph Traversal (SPARQL Query Language Specification)
+
+&nbsp;  A Protocol Layer, to use SPARQL via http (SPARQL Protocol for RDF Specification)
+
+&nbsp;  An XML Output Format Specification for SPARQL Queries (SPARQL Query XML Results Format)
+
+•	OWL (Web Ontology Language) The schema language, or knowledge representation (KR) language, of the Semantic Web. OWL enables you to define concepts composably so that these concepts can be reused as much and as often as possible. Composability means that each concept is carefully defined so that it can be selected and assembled in various combinations with other concepts as needed for many different applications and purposes.
+
 ## There are three ways of Semantic Web notations as follows.
 
 > Subject X is "Harald" and Object(Literal) Y is "++49-331-5509-927", which is “the value of X,” and Predicate, P is “phone”
@@ -140,19 +154,7 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 > <Spring14#KE> lv:hasParticipant (<BurgerAnton> <MuellerFranz><br />
 > <SchmidtJoseph> <SchulzeEgon>).
 
-### From a technical point of view, the Semantic Web consists primarily of three technical standards:
 
-•	RDF (Resource Description Framework): The data modeling language for the Semantic Web. All Semantic Web information is stored and represented in the RDF.
-
-•	SPARQL (SPARQL Protocol and RDF Query Language): The query language of the Semantic Web. It is specifically designed to query data across various systems.
-
-&nbsp;  A Query Language for RDF Graph Traversal (SPARQL Query Language Specification)
-
-&nbsp;  A Protocol Layer, to use SPARQL via http (SPARQL Protocol for RDF Specification)
-
-&nbsp;  An XML Output Format Specification for SPARQL Queries (SPARQL Query XML Results Format)
-
-•	OWL (Web Ontology Language) The schema language, or knowledge representation (KR) language, of the Semantic Web. OWL enables you to define concepts composably so that these concepts can be reused as much and as often as possible. Composability means that each concept is carefully defined so that it can be selected and assembled in various combinations with other concepts as needed for many different applications and purposes.
 
 ## RDF Schema
 
