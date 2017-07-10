@@ -418,20 +418,19 @@ Ontology classifies things in terms of semantics, or meaning into class or subcl
 
 OWL is the formal syntax for defining ontologies and it is extension of RDFS(RDF Schema)
 
-### Ontology axioms consist of the following three building blocks:<br>
+### Ontology axioms consist of the following three building blocks(Classes, Individuals, Properties):<br>
 • Classes : comparable with classes in RDFS<br>
 • Individuals : comparable with objects in RDFS<br>
 • Properties : comparable with properties in RDFS
 
 1.OWL – Classes
 
-• there exist two predefined classes
+• there exist two predefined classes(owl:Thing, owl:Nothing)
 
-• owl:Thing (class that contains all individuals)<br>
-<bolckqoute>
-owl:Nothing (empty class)<br>
-Definition of a class  
-</blockquote>
+ > owl:Thing (class that contains all individuals)
+ > owl:Nothing (empty class)<br>
+ 
+• Definition of a class  
 
 > :Book a owl:Class .
 
