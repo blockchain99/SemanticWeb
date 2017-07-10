@@ -394,7 +394,7 @@ A property path is a possible route through an RDF graph between two graph nodes
 • negated property paths
 &emsp; { ?x !(rdf:type|^rdf:type) ?y } 
 
-Who are the authors who were influenced by the influencers of George Orwell? <br>
+### Who are the authors who were influenced by the influencers of George Orwell? <br>
 <blockquote>PREFIX : <http://dbpedia.org/resource/> <br>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
