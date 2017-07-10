@@ -246,6 +246,92 @@ WHERE {<br>
 LIMIT 100         
 </blockquote>
 
+2. Select all authors with their notable works and year of publication <br>
+New variable is assigned using "xsd:integer(?date) AS ?year" in SELECT phrase. <br>
+<blockquote>  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
+PREFIX dbpprop: <http://dbpedia.org/property/> <br>
+SELECT ?author ?work xsd:integer(?date) AS ?year <br>
+FROM <http://dbpedia.org/> <br>
+WHERE {<br>
+&emsp; ?author rdf:type dbpedia-owl:Writer .<br>
+&emsp; ?author dbpedia-owl:notableWork ?work .<br>
+&emsp; ?work dbpprop:releaseDate ?date <br>
+} ORDER BY ?date<br>
+LIMIT 100         
+</blockquote> 
+
+3. Select all authors with their notable works and year of publication <br>
+New variable is assigned using "(REPLACE(str(?date),"[^0-9]", "")) AS ?year" in SELECT phrase. <br>
+<blockquote>  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
+PREFIX dbpprop: <http://dbpedia.org/property/> <br>
+SELECT ?author ?work (REPLACE(str(?date),"[^0-9]", "")) AS ?year <br>
+FROM <http://dbpedia.org/> <br>
+WHERE {<br>
+&emsp; ?author rdf:type dbpedia-owl:Writer .<br>
+&emsp; ?author dbpedia-owl:notableWork ?work .<br>
+&emsp; ?work dbpprop:releaseDate ?date <br>
+&emsp; FILTER REGEX (?date, "[0-9]{4}") .
+} ORDER BY ?date<br>
+LIMIT 100         
+</blockquote> 
+
+4. How many authors are there in DBpedia? <br>
+<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+SELECT (COUNT(?author)) AS ?num<br>
+FROM <http://dbpedia.org/><br>
+WHERE {<br>
+&emsp; ?author rdf:type dbpedia-owl:Writer .<br>
+}
+</blockquote> 
+
+5. How many distinct authors are there in DBpedia who have entries for notable works? <br>
+Aggregate Functions : (COUNT(DISTINCT ?author)) <br>
+<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+SELECT (COUNT(DISTINCT ?author)) AS ?num<br>
+FROM <http://dbpedia.org/><br>
+WHERE {<br>
+&emsp; ?author rdf:type dbpedia-owl:Writer .<br>
+&emsp;?author dbpedia-owl:notableWork ?work .<br>
+}
+</blockquote>
+
+6. Which author wrote how many notable works?
+<blockquote>Aggregate Functions : (COUNT(?work)), GROUP BY ?author<br>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+SELECT ?author (COUNT(?work)) AS ?num_works<br>
+FROM <http://dbpedia.org/><br>
+WHERE {<br>
+&emsp; ?author rdf:type dbpedia-owl:Writer .<br>
+&emsp; ?author dbpedia-owl:notableWork ?work .<br>
+} GROUP BY ?author <br>
+ORDER BY DESC (?num_works)
+
+7. Select all authors, who they are influenced by and all the influencers notable works<br>
+Subqueries : <br>
+<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+SELECT ?author ?influencer ?work<br>
+FROM <http://dbpedia.org/><br>
+WHERE {<br>
+{ SELECT ?author ?influencer<br>
+&emsp; FROM <http://dbpedia.org/><br>
+&emsp; WHERE {<br>
+&emsp; &emsp; ?author rdf:type dbpedia-owl:Writer .<br>
+&emsp; &emsp; ?author dbpedia-owl:influencedBy ?influencer .<br>
+} LIMIT 10<br>
+}<br>
+&emsp; ?influencer dbpedia-owl:notableWork ?work .<br>
+}
+</blockquote>
+
+
 
 Suppose that we have a book, in which each page make reference for the previous page through a page number one less than a current page number. We can detect and identify the removal of a page when a page has been removed through the page number.
 
