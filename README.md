@@ -146,11 +146,11 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 •	SPARQL (SPARQL Protocol and RDF Query Language): The query language of the Semantic Web. It is specifically designed to query data across various systems.
 
-&nbsp; • A Query Language for RDF Graph Traversal (SPARQL Query Language Specification)
+&nbsp;  A Query Language for RDF Graph Traversal (SPARQL Query Language Specification)
 
-&nbsp; • A Protocol Layer, to use SPARQL via http (SPARQL Protocol for RDF Specification)
+&nbsp;  A Protocol Layer, to use SPARQL via http (SPARQL Protocol for RDF Specification)
 
-&nbsp; • An XML Output Format Specification for SPARQL Queries (SPARQL Query XML Results Format)
+&nbsp;  An XML Output Format Specification for SPARQL Queries (SPARQL Query XML Results Format)
 
 •	OWL (Web Ontology Language) The schema language, or knowledge representation (KR) language, of the Semantic Web. OWL enables you to define concepts composably so that these concepts can be reused as much and as often as possible. Composability means that each concept is carefully defined so that it can be selected and assembled in various combinations with other concepts as needed for many different applications and purposes.
 
