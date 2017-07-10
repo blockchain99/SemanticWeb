@@ -228,9 +228,23 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 ![RDF-property4]({{http://www.patternics.com}}/SemanticWeb/image/prop4.JPG)
 
 
+## SPARQL Progrmming
+### Click Following link for further SPARQL(Protocol and RDF Query Language) Progamming !
 
-## Click Following link for further SPARQL(Protocol and RDF Query Language) Progamming !
-
+1. Select all authors with their notable works and year of publication <br>
+<blockquote>  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
+PREFIX dbpprop: <http://dbpedia.org/property/> <br>
+SELECT ?author ?work ?date <br>
+FROM <http://dbpedia.org/> <br>
+WHERE {<br>
+?author rdf:type dbpedia-owl:Writer .<br>
+?author dbpedia-owl:notableWork ?work .<br>
+?work dbpprop:releaseDate ?date <br>
+} ORDER BY ?date<br>
+LIMIT 100         
+</blockquote>
 
 
 Suppose that we have a book, in which each page make reference for the previous page through a page number one less than a current page number. We can detect and identify the removal of a page when a page has been removed through the page number.
