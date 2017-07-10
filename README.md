@@ -497,6 +497,73 @@ There exist two property variants: object properties and datatype properties
 &emsp; &emsp; :literaryGenre :DystopianFiction .
 </blockquote> 
 
+• OWL – Class Hierarchies<br>
+via inference it can be entailed that „Novel“ is also a subclass of „Work“<br>
+<blockquote> :Novel a owl:Class ;<br>
+&emsp; &emsp; rdfs:subClassOf :Book .<br>
+:Book a owl:Class ;<br>
+&emsp; &emsp; rdfs:subClassOf :Work .<br>
+:Work a owl:Class .
+</blockquote> 
+
+• OWL – Class Hierarchies and Disjunctiveness<br>
+via inference it can be entailed that „Novel“ and „Poet“ are also disjoint classes.<br>
+<blockquote> :Book a owl:Class .<br>
+:Writer a owl:Class .<br>
+:Novel a owl:Class ;<br>
+&emsp; &emsp; rdfs:subClassOf :Book .<br>
+:Poet a owl:Class ;<br>
+&emsp; &emsp; rdfs:subClassOf :Work .<br>
+:Book owl:disjointWith :Writer .
+</blockquote> 
+
+• OWL – Class Hierarchies and Disjunctiveness<br>
+OWL provides a shortcut to define several classes to be disjunctive.<br>
+<blockquote> [] a owl:AllDisjointClasses ;<br>
+&emsp; owl:members. <br>
+&emsp; ( :Book <br>
+:Poet a owl:Class ;<br>
+&emsp; &emsp; :Writer<br>
+&emsp; &emsp; :Vegetable<br>
+&emsp; &emsp; :Furniture<br>
+&emsp; &emsp; :Car ) .
+</blockquote> 
+
+• OWL – Class Hierarchies and Equivalence<br>
+via inference it can be entailed that „Poet“ is also an „Author“<br>
+<blockquote> :Writer a owl:Class .<br>
+:Author a owl:Class .<br>
+:Poet a owl:Class ;<br>
+&emsp; &emsp; rdfs:subClassOf :Writer . <br>
+:Writer owl:equivalentClass :Author .<br>
+</blockquote> 
+
+• OWL – Individuals<br>
+via inference it can be entailed that „ARX012345“ is a „Book“<br>
+<blockquote> :NineteenEightyfour a :Novel ;<br>
+&emsp; &emsp;:author :GeorgeOrwell ;<br>
+:publicationYear 1948 ;<br>
+owl:sameAs :ARX012345 .<br>
+:Novel a owl:Class ;<br>
+&emsp; &emsp; rdfs:subClassOf :Book . <br>
+:Book a owl:Class.
+</blockquote> 
+
+&emsp; • Difference of Individuals via owl:differentFrom<br>
+<blockquote> :ARX012345 a :Novel ;<br>
+&emsp; &emsp; owl:differentFrom :ARX012346 .
+</blockquote> 
+
+• OWL – Individuals<br>
+OWL provides a shortcut to define several individuals to be different<br>
+<blockquote> owl:AllDifferent ;<br>
+&emsp; owl:distinctMembers <br>
+&emsp; &emsp; (:NineteenEightyfour
+&emsp; &emsp;:AnimalFarm.<br>
+&emsp; &emsp;:BraveNewWorld.<br>
+&emsp; &emsp;:Simulacron5) .<br>
+</blockquote> 
+
 
 ### 1. OWL example<br>
 <blockquote>
@@ -517,6 +584,11 @@ There exist two property variants: object properties and datatype properties
 &emsp; &emsp; &emsp;                                          )<br>
 &emsp; &emsp;                       ].<br>
                       </blockquote>                     
+
+
+
+
+
 
 ![OWL1](./image/owl.JPG)
 
