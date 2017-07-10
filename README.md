@@ -20,7 +20,7 @@ Followings are all examples of things someonemight talk about and that can be re
 
 > Subject X is "Harald" and Object(Resource) Y is "http://harald.blogspot.com/", which is “the value of X,” and Predicate, P is “weblog”
 
-![semantic web graph]({{http://www.patternics.com}}/SemanticWeb/image/rdf1.JPG)
+![semantic web graph](./image/rdf1.JPG)
 
 ### 1.  N-Triples Notation
 
@@ -407,7 +407,7 @@ dbpedia-owl:influencedBy/^dbpedia-owl:influencedBy <br>
 }
 </blockquote>
 
-## [Bitcoin concept and programming](http://www.patternics.com/blockchain/bitcoin)
+## [Click for further SPARQL Progamming !](https://github.com/blockchain99/SemanticWeb)
 
 
 > Acknowledgement : Some images and articles are from other sites or materials: Amelie Gyrard: Christian Bonnet (Eurecom, Mobile Communication),Dr. Harald Sack : Hasso-Plattner-Institut for IT Systems Engineering, Dean Allemang : Semantic Web for the Working
