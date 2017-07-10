@@ -156,7 +156,7 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 ## RDF Schema
 
-![RDF-schema]({{http://www.patternics.com}}/SemanticWeb/image/rdfschema.JPG)
+![RDF-schema](./image/rdfschema.JPG)
 
 ### RDFSchema allows following actions.
 
@@ -376,12 +376,12 @@ A property path is a possible route through an RDF graph between two graph nodes
 • inverse path sequences paths <br>
 { ?x foaf:knows/^foaf:knows ?y . <br>
 &emsp; FILTER(?x != ?y) }
-![RDF-property path]({{http://www.patternics.com}}/SemanticWeb/image/propp.JPG)
+![RDF-property path](./image/propp.JPG)
 
 • arbitrary length match
 { ?x foaf:mbox <mailto:alice@example> .<br>
 &emsp; ?x foaf:knows+/foaf:name ?name . }
-![RDF-property path2]({{http://www.patternics.com}}/SemanticWeb/image/propp2.JPG)
+![RDF-property path2](./image/propp2.JPG)
 
 • inverse path sequences paths
 &emsp; { ?x foaf:knows/^foaf:knows ?y . 
