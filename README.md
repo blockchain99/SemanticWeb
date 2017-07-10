@@ -454,12 +454,48 @@ There exist two property variants: object properties and datatype properties
 > :author a owl:ObjectProperty .
 
 &emsp; • Domain and Range of object properties<br>
-<blockquote> :author a owl:ObjectProperty ;
+<blockquote> :author a owl:ObjectProperty ;<br>
 &emsp; rdfs:domain :Book ;<br>
 &emsp; rdfs:range :Writer .
 </blockquote> 
  
+• Datatype properties have datatypes as range<br>
+> :publicationYear a owl:DatatypeProperty .<br>
+&emsp; •Domain and range of datatype properties<br>
+<blockquote> :publicationYear a owl:DatatypeProperty ;<br>
+&emsp; rdfs:domain :Book ;<br>
+&emsp; rdfs:range xsd:integer .
+</blockquote> 
 
+• OWL – Properties and Individuals<br>
+<blockquote> :Book a owl:Class .<br>
+:Writer a owl:Class .<br>
+:GeorgeOrwell a Writer .<br>
+:author a owl:ObjectProperty ;<br>
+&emsp; &emsp; rdfs:domain :Book ;<br>
+&emsp; &emsp; rdfs:range :Writer .<br>
+:publicationYear a owl:DatatypeProperty ;<br>
+&emsp; &emsp; rdfs:domain :Book ;<br>
+&emsp; &emsp; rdfs:range xsd:integer .<br>
+:NineteenEightyFour a :Book ;<br>
+&emsp; &emsp; :author :GeorgeOrwell ;<br>
+&emsp; &emsp; :publicationYear 1948 .
+</blockquote> 
+
+• OWL – • Properties in general are not functional<br>
+<blockquote> :Genre a owl:Class .<br>
+:PoliticalFiction a :Genre .<br>
+:ScienceFiction a :Genre .<br>
+:DystopianFiction a :Genre .<br>
+
+:literaryGenre a owl:ObjectProperty ;<br>
+&emsp; &emsp; rdfs:domain :Book ;<br>
+&emsp; &emsp; rdfs:range :Genre .<br>
+:NineteenEightyFour a :Book ;<br>
+&emsp; &emsp; :literaryGenre :PoliticalFiction ;<br>
+&emsp; &emsp; :literaryGenre :ScienceFiction ;<br>
+&emsp; &emsp; :literaryGenre :DystopianFiction .
+</blockquote> 
 
 ### 1. OWL example
 @prefix : <http://example.com/owl/> .
