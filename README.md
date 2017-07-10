@@ -231,7 +231,7 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 ## SPARQL Progrmming
 ### Click Following link for further SPARQL(Protocol and RDF Query Language) Progamming !
 
-1. Select all authors with their notable works and year of publication <br>
+#### 1. Select all authors with their notable works and year of publication <br>
 <blockquote>  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
@@ -246,7 +246,7 @@ WHERE {<br>
 LIMIT 100         
 </blockquote>
 
-2. Select all authors with their notable works and year of publication <br>
+#### 2. Select all authors with their notable works and year of publication <br>
 New variable is assigned using "xsd:integer(?date) AS ?year" in SELECT phrase. <br>
 <blockquote>  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
@@ -262,7 +262,7 @@ WHERE {<br>
 LIMIT 100         
 </blockquote> 
 
-3. Select all authors with their notable works and year of publication <br>
+#### 3. Select all authors with their notable works and year of publication <br>
 New variable is assigned using "(REPLACE(str(?date),"[^0-9]", "")) AS ?year" in SELECT phrase. <br>
 <blockquote>  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
@@ -279,7 +279,7 @@ WHERE {<br>
 LIMIT 100         
 </blockquote> 
 
-4. How many authors are there in DBpedia? <br>
+#### 4. How many authors are there in DBpedia? <br>
 <blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
 SELECT (COUNT(?author)) AS ?num<br>
@@ -289,7 +289,7 @@ WHERE {<br>
 }
 </blockquote> 
 
-5. How many distinct authors are there in DBpedia who have entries for notable works? <br>
+#### 5. How many distinct authors are there in DBpedia who have entries for notable works? <br>
 Aggregate Functions : (COUNT(DISTINCT ?author)) <br>
 <blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
@@ -301,7 +301,7 @@ WHERE {<br>
 }
 </blockquote>
 
-6. Which author wrote how many notable works?
+#### 6. Which author wrote how many notable works?
 <blockquote>Aggregate Functions : (COUNT(?work)), GROUP BY ?author<br>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
@@ -314,7 +314,7 @@ WHERE {<br>
 ORDER BY DESC (?num_works)
 </blockquote>
 
-7. Select all authors, who they are influenced by and all the influencers notable works<br>
+#### 7. Select all authors, who they are influenced by and all the influencers notable works<br>
 Subqueries : <br>
 <blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
@@ -329,6 +329,81 @@ WHERE {<br>
 } LIMIT 10<br>
 }<br>
 &emsp; ?influencer dbpedia-owl:notableWork ?work .<br>
+}
+</blockquote>
+
+#### 8. Select all authors, who don‘t have a notable work entry in DBpedia <br>
+Filtering of query solutions is done within a FILTER expression using NOT EXISTS and EXISTS.<br>
+<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+SELECT ?author<br>
+FROM <http://dbpedia.org/><br>
+WHERE {<br>
+&emsp; ?author rdf:type dbpedia-owl:Writer<br>
+&emsp; FILTER NOT EXISTS {?author dbpedia-owl:notableWork ?work .}<br>
+}
+</blockquote>
+
+#### 9.Select all authors, who don‘t have a notable work entry in DBpedia<br>
+Filtering of query solutions be removing possible solutions with MINUS.<br>
+<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+SELECT ?author<br>
+FROM <http://dbpedia.org/><br>
+WHERE {<br>
+&emsp; ?author rdf:type dbpedia-owl:Writer<br>
+&emsp; MINUS {?author dbpedia-owl:notableWork ?work .} <br>
+}
+</blockquote>
+
+#### 10 Property Paths <br>
+A property path is a possible route through an RDF graph between two graph nodes.
+
+• trivial case: property path of length 1, i.e. a triple pattern
+
+• alternatives: match one or both possibilities
+&emsp; { :book1 dc:title|rdfs:label ?displayString }
+
+• sequence: property path of length >1
+&emsp; { ?x foaf:mbox <mailto:alice@example> .<br>
+&emsp; &emsp; ?x foaf:knows/foaf:knows/foaf:name ?name . }
+
+• inverse property paths: reversing the direction of the triple
+&emsp; { ?x foaf:mbox <mailto:alice@example> }<br>
+&emsp; &emsp;  =<br>
+&emsp; { <mailto:alice@example> ^foaf:mbox ?x }
+
+• inverse path sequences paths <br>
+{ ?x foaf:knows/^foaf:knows ?y . <br>
+&emsp; FILTER(?x != ?y) }
+![RDF-property path]({{http://www.patternics.com}}/SemanticWeb/image/propp.JPG)
+
+• arbitrary length match
+{ ?x foaf:mbox <mailto:alice@example> .<br>
+&emsp; ?x foaf:knows+/foaf:name ?name . }
+![RDF-property path2]({{http://www.patternics.com}}/SemanticWeb/image/propp2.JPG)
+
+• inverse path sequences paths
+&emsp; { ?x foaf:knows/^foaf:knows ?y . 
+&emsp; &emsp; FILTER(?x != ?y) }
+
+• arbitrary length match
+&emsp; { ?x foaf:mbox <mailto:alice@example> .
+&emsp; &emsp; ?x foaf:knows+/foaf:name ?name . }
+
+• negated property paths
+&emsp; { ?x !(rdf:type|^rdf:type) ?y } 
+
+Who are the authors who were influenced by the influencers of George Orwell? <br>
+<blockquote>PREFIX : <http://dbpedia.org/resource/> <br>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
+SELECT ?influencedByInfluencers <br>
+FROM <http://dbpedia.org/> <br>
+WHERE { <br>
+:George_Orwell  <br>
+dbpedia-owl:influencedBy/^dbpedia-owl:influencedBy <br>
+?influencedByInfluencers . <br>
 }
 </blockquote>
 
