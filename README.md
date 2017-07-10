@@ -427,10 +427,11 @@ OWL is the formal syntax for defining ontologies and it is extension of RDFS(RDF
 
 • there exist two predefined classes
 
-• owl:Thing (class that contains all individuals)
-
-> owl:Nothing (empty class)
-> Definition of a class  
+• owl:Thing (class that contains all individuals)<br>
+<bolckqoute>
+owl:Nothing (empty class)<br>
+Definition of a class  
+</blockquote>
 
 > :Book a owl:Class .
 
