@@ -12,7 +12,9 @@ so that the whole Web experience is enhanced. The Web seems smarter because smar
 * In the Semantic Web we refer to the things in the world as resources; a resource can be anything that someonemight want to talk about.
 Followings are all examples of things someonemight talk about and that can be resources in the SemanticWeb.
 
-### There are three ways of Semantic Web notations as follows.
+### With data-backed Web applications, the Semantic Web infrastructure allows the data to drive the presentation so that various webpages (presentations) can provide views into a consistent body of information. In this way, the Semantic Web helps data not be so dumb.
+
+## There are three ways of Semantic Web notations as follows.
 
 > Subject X is "Harald" and Object(Literal) Y is "++49-331-5509-927", which is “the value of X,” and Predicate, P is “phone”
 
@@ -146,16 +148,11 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 •	OWL (Web Ontology Language) The schema language, or knowledge representation (KR) language, of the Semantic Web. OWL enables you to define concepts composably so that these concepts can be reused as much and as often as possible. Composability means that each concept is carefully defined so that it can be selected and assembled in various combinations with other concepts as needed for many different applications and purposes.
 
-### * With data-backed Web applications, the Semantic Web infrastructure allows the data to drive the presentation so that various webpages (presentations) can provide views into a consistent body of information. In this way, the Semantic Web helps data not be so dumb.
-
-### Semantic Web / Linked Data as a distributed framework for the cutting edge technologies.
-### 1. “The suite of technologies developed in the Semantic Web … such as ontologies, semantic annotation, Linked Data and semantic Web services … can be used as principal solutions for the purpose of realizing the IoT,” they state. “Defining an ontology and using semantic descriptions for data will make it interoperable for users and stakeholders that share and use the same ontology.”
-
 ## RDF Schema
 
 ![RDF-schema]({{http://www.patternics.com}}/SemanticWeb/image/rdfschema.JPG)
 
-RDFSchema allows:
+### RDFSchema allows following functions.
 
 • Definition of classes
 
@@ -169,7 +166,9 @@ RDFSchema allows:
 
 • Subproperties and superproperties
 
-1. Classes are as follows.
+### There are twon imporrant elements in RDF Schema, They are Classes and Properties.
+
+#### 1. Classes are as follows.
 
   • rdfs:Class is Concept of a class, defines an abstract object and is applied (with rdf:type) to create instances
  
@@ -181,7 +180,7 @@ RDFSchema allows:
   
   • and additionally,Threre are rdfs:Datatype, rdf:XMLLiteral, rdfs:Container, rdfs:ContainerMembershipProperty in Classes.
 
-2. Properties are as follows.
+#### 2. Properties are as follows.
 
 ![RDF-property]({{http://www.patternics.com}}/SemanticWeb/image/prop.JPG)
 
@@ -194,11 +193,6 @@ RDFSchema allows:
 • rdfs:range is defines range of a property concerning a class
 
 ![RDF-property2]({{http://www.patternics.com}}/SemanticWeb/image/prop2.JPG)
-
-is symbols can refer to things in the world, how can we
-build models from those symbols that help us to capture, understand, and
-communicate what we know about relationships between those things?
-Blockchain is a data structure, which is arrange of data in computer memory, such as Excel sheet, Google Doc and PDF files.
 
 ![RDF-property3]({{http://www.patternics.com}}/SemanticWeb/image/prop3.JPG)
 
@@ -223,20 +217,18 @@ Blockchain is a data structure, which is arrange of data in computer memory, suc
 > :HaraldSack a :SeniorResearcher .<br />
 > <Spring14#KE> :isManagedBy :HaraldSack .
 
-
 ### What conclusions can we deduce with RDF(S)?
 
 ![RDF-property4]({{http://www.patternics.com}}/SemanticWeb/image/prop4.JPG)
-
-## Click Following link for further SPARQL(Protocol and RDF Query Language) Progamming
-
-
 
 • A Query Language for RDF Graph Traversal (SPARQL Query Language Specification)
 
 • A Protocol Layer, to use SPARQL via http (SPARQL Protocol for RDF Specification)
 
 • An XML Output Format Specification for SPARQL Queries (SPARQL Query XML Results Format)
+
+## Click Following link for further SPARQL(Protocol and RDF Query Language) Progamming !
+
 
 
 Suppose that we have a book, in which each page make reference for the previous page through a page number one less than a current page number. We can detect and identify the removal of a page when a page has been removed through the page number.
