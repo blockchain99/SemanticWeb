@@ -595,7 +595,6 @@ OWL provides a shortcut to define several individuals to be different<br>
 
 ## [Click for further SPARQL Progamming !](https://github.com/blockchain99/SemanticWeb)
 
-
 > Acknowledgement : Some images and articles are from other sites or materials: Amelie Gyrard: Christian Bonnet (Eurecom, Mobile Communication),Dr. Harald Sack : Hasso-Plattner-Institut for IT Systems Engineering, Dean Allemang : Semantic Web for the Working
 Ontologist
 
