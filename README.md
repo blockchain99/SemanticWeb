@@ -14,7 +14,7 @@ Followings are all examples of things someonemight talk about and that can be re
 
 ### With data-backed Web applications, the Semantic Web infrastructure allows the data to drive the presentation so that various webpages (presentations) can provide views into a consistent body of information. In this way, the Semantic Web helps data not be so dumb.
 
-### From a technical point of view, the Semantic Web consists primarily of three technical standards:
+### From a technical point of view, the Semantic Web consists primarily of three technical standards(RDF, SPARQL, OWL):
 
 •	RDF (Resource Description Framework): The data modeling language for the Semantic Web. All Semantic Web information is stored and represented in the RDF.
 
@@ -408,6 +408,65 @@ dbpedia-owl:influencedBy/^dbpedia-owl:influencedBy <br>
 ?influencedByInfluencers . <br>
 }
 </blockquote>
+
+## OWL(Web Ontology Language)
+
+### What is Ontology and OWL(Web Ontology Language)?
+RDF data can be encoded with semantic metadata using two syntaxes: RDFS(RDF Schema) and OWL.
+
+Ontology classifies things in terms of semantics, or meaning into class or subclass, which allow us to define contextual relationship behind a defined vocabulary.
+
+OWL is the formal syntax for defining ontologies and it is extension of RDFS(RDF Schema)
+### Ontology axioms consist of the following three building blocks:<br>
+• Classes : comparable with classes in RDFS<br>
+• Individuals : comparable with objects in RDFS<br>
+• Properties : comparable with properties in RDFS
+
+1. OWL – Classes<br>
+• there exist two predefined classes<br>
+• owl:Thing (class that contains all individuals)<br>
+• owl:Nothing (empty class)<br>
+• Definition of a class  <br>
+> :Book a owl:Class .
+
+2.OWL – Individuals<br>
+• Definition of individuals via class membership(a "NineteenEightyfour" Book instance generated)<br>
+> :NineteenEightyfour a :Book . <br>
+• Individuals can also be defined without direct class membership as named entity<br>
+> :HaraldSack a owl:NamedIndividual .
+
+3. OWL – Properties
+There exist two property variants: object properties and datatype properties<br>
+• Object properties are defined like classes <br>
+> :author a owl:ObjectProperty .
+&emsp; • Domain and Range of object properties<br>
+<blockquote> :author a owl:ObjectProperty ;
+&emsp; rdfs:domain :Book ;<br>
+&emsp; rdfs:range :Writer .
+</blockquote> 
+ 
+
+
+###1. OWL example
+@prefix : <http://example.com/owl/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+:HappyPerson a owl:Class ;
+    owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf ([ a owl:Restriction ;
+                                            owl:onProperty :hasChild ;
+                                            owl:allValuesFrom :HappyPerson ]
+                                         [ a owl:Restriction ;
+                                           owl:onProperty :hasChild ;
+                                           owl:someValuesFrom :HappyPerson ]
+                                          )
+                      ].
+
+![OWL1](./image/owl.JPG)
+
 
 ## [Click for further SPARQL Progamming !](https://github.com/blockchain99/SemanticWeb)
 
