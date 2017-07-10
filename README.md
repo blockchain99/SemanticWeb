@@ -435,7 +435,7 @@ OWL is the formal syntax for defining ontologies and it is extension of RDFS(RDF
 
 > :Book a owl:Class .
 
-2.OWL – Individuals
+2. OWL – Individuals
 
 • Definition of individuals via class membership(a "NineteenEightyfour" Book instance generated)
 
@@ -461,7 +461,7 @@ There exist two property variants: object properties and datatype properties
  
 
 
-###1. OWL example
+### 1. OWL example
 @prefix : <http://example.com/owl/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
