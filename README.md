@@ -417,6 +417,7 @@ RDF data can be encoded with semantic metadata using two syntaxes: RDFS(RDF Sche
 Ontology classifies things in terms of semantics, or meaning into class or subclass, which allow us to define contextual relationship behind a defined vocabulary.
 
 OWL is the formal syntax for defining ontologies and it is extension of RDFS(RDF Schema)
+
 ### Ontology axioms consist of the following three building blocks:<br>
 • Classes : comparable with classes in RDFS<br>
 • Individuals : comparable with objects in RDFS<br>
