@@ -410,8 +410,7 @@ dbpedia-owl:influencedBy/^dbpedia-owl:influencedBy <br>
 ## [Bitcoin concept and programming](http://www.patternics.com/blockchain/bitcoin)
 
 
-### Meta
-
-> Acknowledgement : Some images and articles are from other sites or materials: Amelie Gyrard: Christian Bonnet (Eurecom, Mobile Communication)
+> Acknowledgement : Some images and articles are from other sites or materials: Amelie Gyrard: Christian Bonnet (Eurecom, Mobile Communication),Dr. Harald Sack : Hasso-Plattner-Institut for IT Systems Engineering, Dean Allemang : Semantic Web for the Working
+Ontologist
 
 Yoonsu Park - http://www.patternics.com Distributed under the MIT license. See LICENSE for more information( https://en.wikipedia.org/wiki/MIT_License ). https://github.com/blockchain99/blockchain
