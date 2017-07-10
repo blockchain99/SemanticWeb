@@ -312,6 +312,7 @@ WHERE {<br>
 &emsp; ?author dbpedia-owl:notableWork ?work .<br>
 } GROUP BY ?author <br>
 ORDER BY DESC (?num_works)
+</blockquote>
 
 7. Select all authors, who they are influenced by and all the influencers notable works<br>
 Subqueries : <br>
