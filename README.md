@@ -146,13 +146,19 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 •	SPARQL (SPARQL Protocol and RDF Query Language): The query language of the Semantic Web. It is specifically designed to query data across various systems.
 
+&nbsp • A Query Language for RDF Graph Traversal (SPARQL Query Language Specification)
+
+&nbsp • A Protocol Layer, to use SPARQL via http (SPARQL Protocol for RDF Specification)
+
+&nbsp • An XML Output Format Specification for SPARQL Queries (SPARQL Query XML Results Format)
+
 •	OWL (Web Ontology Language) The schema language, or knowledge representation (KR) language, of the Semantic Web. OWL enables you to define concepts composably so that these concepts can be reused as much and as often as possible. Composability means that each concept is carefully defined so that it can be selected and assembled in various combinations with other concepts as needed for many different applications and purposes.
 
 ## RDF Schema
 
 ![RDF-schema]({{http://www.patternics.com}}/SemanticWeb/image/rdfschema.JPG)
 
-### RDFSchema allows following functions.
+### RDFSchema allows following actions.
 
 • Definition of classes
 
@@ -166,7 +172,7 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 • Subproperties and superproperties
 
-### There are twon imporrant elements in RDF Schema, They are Classes and Properties.
+### There are two imporrant elements in RDF Schema, They are Classes and Properties.
 
 #### 1. Classes are as follows.
 
@@ -221,11 +227,7 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 ![RDF-property4]({{http://www.patternics.com}}/SemanticWeb/image/prop4.JPG)
 
-• A Query Language for RDF Graph Traversal (SPARQL Query Language Specification)
 
-• A Protocol Layer, to use SPARQL via http (SPARQL Protocol for RDF Specification)
-
-• An XML Output Format Specification for SPARQL Queries (SPARQL Query XML Results Format)
 
 ## Click Following link for further SPARQL(Protocol and RDF Query Language) Progamming !
 
