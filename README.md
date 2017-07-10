@@ -423,23 +423,36 @@ OWL is the formal syntax for defining ontologies and it is extension of RDFS(RDF
 • Individuals : comparable with objects in RDFS<br>
 • Properties : comparable with properties in RDFS
 
-1. OWL – Classes<br>
-• there exist two predefined classes<br>
-• owl:Thing (class that contains all individuals)<br>
-• owl:Nothing (empty class)<br>
-• Definition of a class  <br>
+1. OWL – Classes
+
+• there exist two predefined classes
+
+• owl:Thing (class that contains all individuals)
+
+• owl:Nothing (empty class)
+
+• Definition of a class  
+
 > :Book a owl:Class .
 
-2.OWL – Individuals<br>
-• Definition of individuals via class membership(a "NineteenEightyfour" Book instance generated)<br>
-> :NineteenEightyfour a :Book . <br>
-• Individuals can also be defined without direct class membership as named entity<br>
+2.OWL – Individuals
+
+• Definition of individuals via class membership(a "NineteenEightyfour" Book instance generated)
+
+> :NineteenEightyfour a :Book .
+
+• Individuals can also be defined without direct class membership as named entity
+
 > :HaraldSack a owl:NamedIndividual .
 
 3. OWL – Properties
-There exist two property variants: object properties and datatype properties<br>
-• Object properties are defined like classes <br>
+
+There exist two property variants: object properties and datatype properties
+
+• Object properties are defined like classes 
+
 > :author a owl:ObjectProperty .
+
 &emsp; • Domain and Range of object properties<br>
 <blockquote> :author a owl:ObjectProperty ;
 &emsp; rdfs:domain :Book ;<br>
