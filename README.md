@@ -601,6 +601,8 @@ OWL provides a shortcut to define several individuals to be different<br>
 
 ## [Click for DBpedia SPARQL endpoint query exercise !](http://dbpedia.org/snorql)
 
+## [Web protege :  OWL 2 Web Ontology ](http://protege.stanford.edu/products.php#web-protege)
+
 > Acknowledgement : Some images and articles are from other sites or materials: Amelie Gyrard: Christian Bonnet (Eurecom, Mobile Communication),Dr. Harald Sack : Hasso-Plattner-Institut for IT Systems Engineering, Dean Allemang : Semantic Web for the Working
 Ontologist
 
