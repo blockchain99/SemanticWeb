@@ -10,7 +10,7 @@ so that the whole Web experience is enhanced. The Web seems smarter because smar
 * That is, given that symbols can refer to things in the world, how can we build models from those symbols that help us to capture, understand, and communicate what we know about relationships between those things?
 
 * In the Semantic Web we refer to the things in the world as resources; a resource can be anything that someonemight want to talk about.
-Followings are all examples of things someonemight talk about and that can be resources in the SemanticWeb.
+In this article, we will show examples of things someonemight talk about and that can be resources in the SemanticWeb.
 
 ### With data-backed Web applications, the Semantic Web infrastructure allows the data to drive the presentation so that various webpages (presentations) can provide views into a consistent body of information. In this way, the Semantic Web helps data not be so dumb.
 
