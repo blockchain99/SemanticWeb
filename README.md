@@ -230,7 +230,7 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 ![RDF-property4](./image/prop4.JPG)
 
 
-## SPARQL Progrmming
+## SPARQL Programming
 ### Click Following link for further SPARQL(Protocol and RDF Query Language) Progamming !
 
 #### 1. Select all authors with their notable works and year of publication <br>
