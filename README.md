@@ -593,7 +593,7 @@ OWL provides a shortcut to define several individuals to be different<br>
 ![OWL1](./image/owl.JPG)
 
 
-## [Click for further SPARQL Progamming !](https://github.com/blockchain99/SemanticWeb)
+## [Click for further SPARQL Programming !](https://github.com/blockchain99/SemanticWeb)
 
 ## [Click for EASYRDF Converter to explore RDF programming !](http://www.easyrdf.org/converter)
 
