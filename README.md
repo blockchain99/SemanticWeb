@@ -72,9 +72,9 @@ In this article, we will show examples of things someone might talk about and th
 
 * Typed literal
 
-![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf3.JPG)
+![semantic web graph:rdf2](./image/rdf3.JPG)
 
-> @prefix lec: <http://hpi-web.de/Lecture#> .<br />
+> @prefix lec: < http://hpi-web.de/Lecture# > .<br />
 > < http://hpi.web.de/Spring14#KE ><br />
 > lec:name “Knowledge Engineering“^^< http://www.w3c.org/2001/XMLSchema#string > ;<br />
 > lec:hours “4“^^< http://www.w3c.org/2001/XMLSchema#integer > .<br />
@@ -124,8 +124,8 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 ![RDF-statement](./image/rdf_st2.JPG)
 
-> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .<br />
-> @prefix : <http://example.org/Crimestories#> .<br />
+> @prefix rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > .<br />
+> @prefix : < http://example.org/Crimestories# > .<br />
 > :SherlockHolmes :supposes :StatementOnGardener .<br />
 > :StatementOnGardener a rdf:Statement ;<br />
 > rdf:subject :Gardener ;<br />
@@ -150,7 +150,7 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 > @prefix rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > .<br />
 > @prefix lv: < http://hpi-web.de/Lecture# > .<br />
-> @base <http://hpi-web.de/>.<br />
+> @base < http://hpi-web.de/ >.<br />
 > <Spring14#KE> lv:hasParticipant (<BurgerAnton> <MuellerFranz><br />
 > <SchmidtJoseph> <SchulzeEgon>).
 
@@ -204,9 +204,9 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 
 ![RDF-property3](./image/prop3.JPG)
 
-> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . <br />
-> @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .<br />
-> @prefix : <http://example.org/>.<br />
+> @prefix rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > . <br />
+> @prefix rdfs: < http://www.w3.org/2000/01/rdf-schema# > .<br />
+> @prefix : < http://example.org/ >.<br />
 > :Lecture a rdfs:Class;<br />
 > rdfs:subClassOf :Course.<br />
 > :Seminar a rdfs:Class ;<br />
