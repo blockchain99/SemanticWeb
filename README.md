@@ -44,10 +44,10 @@ In this article, we will show examples of things someone might talk about and th
 
 • Triple ends with a period
 
-> <http://harald.sack.de/foaf.rdf#harald> <http://xmlns.com/foaf/0.1/phone> “+ <br />
+> \<http://harald.sack.de/foaf.rdf#harald\> \<http://xmlns.com/foaf/0.1/phone\> “+ <br />
 > +49-331-5509-927“ .<br />
-> <http://harald.sack.de/foaf.rdf#harald> <http://xmlns.com/foaf/0.1/weblog><br />
-> <http://harald.blogspot.com/> .
+> \<http://harald.sack.de/foaf.rdf#harald\> \<http://xmlns.com/foaf/0.1/weblog\><br />
+> \<http://harald.blogspot.com/\> .
 
 ### 2. Turtle (Terse RDF Tripel Language) Notation
 > @prefix foaf: <http://xmlns.com/foaf/0.1/> .<br />
