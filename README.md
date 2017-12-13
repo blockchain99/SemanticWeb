@@ -59,7 +59,7 @@ In this article, we will show examples of things someone might talk about and th
 
 > @prefix foaf: < http://xmlns.com/foaf/0.1/ > .<br />
 > @base < http://harald.sack.de/foaf.rdf ><br />
-> <#harald> foaf:phone “++49-331-5509-527“ ; foaf:weblog <http://semweb2014.blogspot.com/> .
+> <#harald> foaf:phone “++49-331-5509-527“ ; foaf:weblog < http://semweb2014.blogspot.com/ > .
 
 ![semantic web graph:rdf2](./image/rdf2.JPG)
 
