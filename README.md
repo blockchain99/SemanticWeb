@@ -44,16 +44,16 @@ In this article, we will show examples of things someone might talk about and th
 
 • Triple ends with a period
 
-> \<http://harald.sack.de/foaf.rdf#harald\> \<http://xmlns.com/foaf/0.1/phone\> “+ <br />
+> < http://harald.sack.de/foaf.rdf#harald > < http://xmlns.com/foaf/0.1/phone > “+ <br />
 > +49-331-5509-927“ .<br />
-> \<http://harald.sack.de/foaf.rdf#harald\> \<http://xmlns.com/foaf/0.1/weblog\><br />
-> \<http://harald.blogspot.com/\> .
+> < http://harald.sack.de/foaf.rdf#harald > < http://xmlns.com/foaf/0.1/weblog ><br />
+> < http://harald.blogspot.com/ > .
 
 ### 2. Turtle (Terse RDF Tripel Language) Notation
-> @prefix foaf: <http://xmlns.com/foaf/0.1/> .<br />
-> @base <http://harald.sack.de/foaf.rdf><br />
+> @prefix foaf: < http://xmlns.com/foaf/0.1 /> .<br />
+> @base < http://harald.sack.de/foaf.rdf ><br />
 > <#harald> foaf:phone “++49-331-5509-927“ .<br />
-> <#harald> foaf:weblog <http://harald.blogspot.com/> .
+> <#harald> foaf:weblog < http://harald.blogspot.com/ > .
 
 * Below "Turtle Notation with ;" has same result with above Trutle Notation : semicolon indicates that subsequent triples have the same subject
 
