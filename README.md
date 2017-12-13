@@ -57,34 +57,34 @@ In this article, we will show examples of things someone might talk about and th
 
 * Below "Turtle Notation with ;" has same result with above Trutle Notation : semicolon indicates that subsequent triples have the same subject
 
-> @prefix foaf: <http://xmlns.com/foaf/0.1/> .<br />
-> @base <http://harald.sack.de/foaf.rdf><br />
+> @prefix foaf: < http://xmlns.com/foaf/0.1/ > .<br />
+> @base < http://harald.sack.de/foaf.rdf ><br />
 > <#harald> foaf:phone “++49-331-5509-527“ ; foaf:weblog <http://semweb2014.blogspot.com/> .
 
 ![semantic web graph:rdf2](./image/rdf2.JPG)
 
 * comma indicates that subsequent triples have same subject and property (object list)
 
-> @prefix foaf: <http://xmlns.com/foaf/0.1/> .<br />
-> <#harald> foaf:weblog <http://semweb2014.blogspot.com/> ,<br />
-> <http://semweb2013.blogspot.com/> ,<br />
-> <http://semweb2012.blogspot.com/> .<br />
+> @prefix foaf: < http://xmlns.com/foaf/0.1/ > .<br />
+> <#harald> foaf:weblog < http://semweb2014.blogspot.com/ > ,<br />
+> < http://semweb2013.blogspot.com/ > ,<br />
+> < http://semweb2012.blogspot.com/ > .<br />
 
 * Typed literal
 
 ![semantic web graph:rdf2]({{http://www.patternics.com}}/SemanticWeb/image/rdf3.JPG)
 
 > @prefix lec: <http://hpi-web.de/Lecture#> .<br />
-> <http://hpi.web.de/Spring14#KE><br />
-> lec:name “Knowledge Engineering“^^<http://www.w3c.org/2001/XMLSchema#string> ;<br />
-> lec:hours “4“^^<http://www.w3c.org/2001/XMLSchema#integer> .<br />
+> < http://hpi.web.de/Spring14#KE ><br />
+> lec:name “Knowledge Engineering“^^< http://www.w3c.org/2001/XMLSchema#string > ;<br />
+> lec:hours “4“^^< http://www.w3c.org/2001/XMLSchema#integer > .<br />
 
 * Anonymous Blank Nodes
 
 ![semantic web graph:rdf2](./image/rdf4.JPG)
 
-> @prefix hpi-lv: <http://hpi-web.de/Lecture#>.<br />
-> <http://hpi-web.de/Spring14#KE> hpi-lv:name "Knowledge Engineering";<br />
+> @prefix hpi-lv: < http://hpi-web.de/Lecture# >.<br />
+> < http://hpi-web.de/Spring14#KE > hpi-lv:name "Knowledge Engineering";<br />
 > hpi-lv:takesPlace [<br />
 > hpi-lv:date "Tue 13.30-15.00";<br />
 > hpi-lv:room "HS3" ] .
@@ -93,8 +93,8 @@ In this article, we will show examples of things someone might talk about and th
 
 ![semantic web graph:rdf2](./image/rdf5.JPG)
 
-> @prefix hpi-lv: <http://hpi-web.de/Lecture#>.<br />
-> <http://hpi-web.de/Spring14#KE> hpi-lv:name "Knowledge Engineering";<br />
+> @prefix hpi-lv: < http://hpi-web.de/Lecture# >.<br />
+> < http://hpi-web.de/Spring14#KE > hpi-lv:name "Knowledge Engineering";<br />
 > hpi-lv:takesPlace _:ID1 .<br />
 > _:ID1 hpi-lv:date "Tue 13.30-15.00";<br />
 > hpi-lv:room "HS3" .
@@ -103,9 +103,9 @@ In this article, we will show examples of things someone might talk about and th
 
 ![RDF-Collection](./image/rdf6.JPG)
 
-> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .<br />
-> @prefix lv: <http://hpi-web.de/Lecture#> .<br />
-> @base <http://hpi-web.de/>.<br />
+> @prefix rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > .<br />
+> @prefix lv: < http://hpi-web.de/Lecture# > .<br />
+> @base < http://hpi-web.de/ >.<br />
 > <Sprint14#KE> lv:hasParticipant [<br />
 > rdf:first <BurgerAnton>; rdf:rest [<br />
 > rdf:first <MuellerFranz>; rdf:rest [<br />
@@ -148,8 +148,8 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 > </rdf:RDF>
 
 
-> @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .<br />
-> @prefix lv: <http://hpi-web.de/Lecture#> .<br />
+> @prefix rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > .<br />
+> @prefix lv: < http://hpi-web.de/Lecture# > .<br />
 > @base <http://hpi-web.de/>.<br />
 > <Spring14#KE> lv:hasParticipant (<BurgerAnton> <MuellerFranz><br />
 > <SchmidtJoseph> <SchulzeEgon>).
@@ -234,12 +234,12 @@ Sherlock Holmes supposes that the Gardener has killed the Butler
 ### Click Following link for further SPARQL(Protocol and RDF Query Language) Progamming !
 
 #### 1. Select all authors with their notable works and year of publication <br>
-<blockquote>  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
-PREFIX dbpprop: <http://dbpedia.org/property/> <br>
+<blockquote>  PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > <br>
+PREFIX rdfs: < http://www.w3.org/2000/01/rdf-schema# > <br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ > <br>
+PREFIX dbpprop: < http://dbpedia.org/property/ > <br>
 SELECT ?author ?work ?date <br>
-FROM <http://dbpedia.org/> <br>
+FROM < http://dbpedia.org/ > <br>
 WHERE {<br>
 &emsp; ?author rdf:type dbpedia-owl:Writer .<br>
 &emsp; ?author dbpedia-owl:notableWork ?work .<br>
@@ -250,12 +250,12 @@ LIMIT 100
 
 #### 2. Select all authors with their notable works and year of publication <br>
 New variable is assigned using "xsd:integer(?date) AS ?year" in SELECT phrase. <br>
-<blockquote>  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
-PREFIX dbpprop: <http://dbpedia.org/property/> <br>
+<blockquote>  PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > <br>
+PREFIX rdfs: < http://www.w3.org/2000/01/rdf-schema# > <br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ > <br>
+PREFIX dbpprop: < http://dbpedia.org/property/ > <br>
 SELECT ?author ?work xsd:integer(?date) AS ?year <br>
-FROM <http://dbpedia.org/> <br>
+FROM < http://dbpedia.org/ > <br>
 WHERE {<br>
 &emsp; ?author rdf:type dbpedia-owl:Writer .<br>
 &emsp; ?author dbpedia-owl:notableWork ?work .<br>
@@ -266,12 +266,12 @@ LIMIT 100
 
 #### 3. Select all authors with their notable works and year of publication <br>
 New variable is assigned using "(REPLACE(str(?date),"[^0-9]", "")) AS ?year" in SELECT phrase. <br>
-<blockquote>  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> <br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
-PREFIX dbpprop: <http://dbpedia.org/property/> <br>
+<blockquote>  PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > <br>
+PREFIX rdfs: < http://www.w3.org/2000/01/rdf-schema# > <br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ > <br>
+PREFIX dbpprop: < http://dbpedia.org/property/ > <br>
 SELECT ?author ?work (REPLACE(str(?date),"[^0-9]", "")) AS ?year <br>
-FROM <http://dbpedia.org/> <br>
+FROM < http://dbpedia.org/ > <br>
 WHERE {<br>
 &emsp; ?author rdf:type dbpedia-owl:Writer .<br>
 &emsp; ?author dbpedia-owl:notableWork ?work .<br>
@@ -282,10 +282,10 @@ LIMIT 100
 </blockquote> 
 
 #### 4. How many authors are there in DBpedia? <br>
-<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+<blockquote>PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# ><br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ ><br>
 SELECT (COUNT(?author)) AS ?num<br>
-FROM <http://dbpedia.org/><br>
+FROM < http://dbpedia.org/ ><br>
 WHERE {<br>
 &emsp; ?author rdf:type dbpedia-owl:Writer .<br>
 }
@@ -293,10 +293,10 @@ WHERE {<br>
 
 #### 5. How many distinct authors are there in DBpedia who have entries for notable works? <br>
 Aggregate Functions : (COUNT(DISTINCT ?author)) <br>
-<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+<blockquote>PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# ><br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ ><br>
 SELECT (COUNT(DISTINCT ?author)) AS ?num<br>
-FROM <http://dbpedia.org/><br>
+FROM < http://dbpedia.org/ ><br>
 WHERE {<br>
 &emsp; ?author rdf:type dbpedia-owl:Writer .<br>
 &emsp;?author dbpedia-owl:notableWork ?work .<br>
@@ -305,10 +305,10 @@ WHERE {<br>
 
 #### 6. Which author wrote how many notable works?
 <blockquote>Aggregate Functions : (COUNT(?work)), GROUP BY ?author<br>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# ><br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ ><br>
 SELECT ?author (COUNT(?work)) AS ?num_works<br>
-FROM <http://dbpedia.org/><br>
+FROM < http://dbpedia.org/ ><br>
 WHERE {<br>
 &emsp; ?author rdf:type dbpedia-owl:Writer .<br>
 &emsp; ?author dbpedia-owl:notableWork ?work .<br>
@@ -318,13 +318,13 @@ ORDER BY DESC (?num_works)
 
 #### 7. Select all authors, who they are influenced by and all the influencers notable works<br>
 Subqueries : <br>
-<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+<blockquote>PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# ><br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ ><br>
 SELECT ?author ?influencer ?work<br>
-FROM <http://dbpedia.org/><br>
+FROM < http://dbpedia.org/ ><br>
 WHERE {<br>
 { SELECT ?author ?influencer<br>
-&emsp; FROM <http://dbpedia.org/><br>
+&emsp; FROM < http://dbpedia.org/ ><br>
 &emsp; WHERE {<br>
 &emsp; &emsp; ?author rdf:type dbpedia-owl:Writer .<br>
 &emsp; &emsp; ?author dbpedia-owl:influencedBy ?influencer .<br>
@@ -336,10 +336,10 @@ WHERE {<br>
 
 #### 8. Select all authors, who don‘t have a notable work entry in DBpedia <br>
 Filtering of query solutions is done within a FILTER expression using NOT EXISTS and EXISTS.<br>
-<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+<blockquote>PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# ><br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ ><br>
 SELECT ?author<br>
-FROM <http://dbpedia.org/><br>
+FROM < http://dbpedia.org/ ><br>
 WHERE {<br>
 &emsp; ?author rdf:type dbpedia-owl:Writer<br>
 &emsp; FILTER NOT EXISTS {?author dbpedia-owl:notableWork ?work .}<br>
@@ -348,10 +348,10 @@ WHERE {<br>
 
 #### 9.Select all authors, who don‘t have a notable work entry in DBpedia<br>
 Filtering of query solutions be removing possible solutions with MINUS.<br>
-<blockquote>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/><br>
+<blockquote>PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# ><br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ ><br>
 SELECT ?author<br>
-FROM <http://dbpedia.org/><br>
+FROM < http://dbpedia.org/ ><br>
 WHERE {<br>
 &emsp; ?author rdf:type dbpedia-owl:Writer<br>
 &emsp; MINUS {?author dbpedia-owl:notableWork ?work .} <br>
@@ -397,11 +397,11 @@ A property path is a possible route through an RDF graph between two graph nodes
 &emsp; { ?x !(rdf:type|^rdf:type) ?y } 
 
 ### Who are the authors who were influenced by the influencers of George Orwell? <br>
-<blockquote>PREFIX : <http://dbpedia.org/resource/> <br>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> <br>
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> <br>
+<blockquote>PREFIX : < http://dbpedia.org/resource/ > <br>
+PREFIX rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > <br>
+PREFIX dbpedia-owl: < http://dbpedia.org/ontology/ > <br>
 SELECT ?influencedByInfluencers <br>
-FROM <http://dbpedia.org/> <br>
+FROM < http://dbpedia.org/ > <br>
 WHERE { <br>
 :George_Orwell  <br>
 dbpedia-owl:influencedBy/^dbpedia-owl:influencedBy <br>
@@ -567,11 +567,11 @@ OWL provides a shortcut to define several individuals to be different<br>
 
 ### 1. OWL example<br>
 <blockquote>
-@prefix : <http://example.com/owl/> .<br>
-@prefix owl: <http://www.w3.org/2002/07/owl#> .<br>
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .<br>
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .<br>
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .<br>
+@prefix : < http://example.com/owl/ > .<br>
+@prefix owl: < http://www.w3.org/2002/07/owl# > .<br>
+@prefix rdfs: < http://www.w3.org/2000/01/rdf-schema# > .<br>
+@prefix rdf: < http://www.w3.org/1999/02/22-rdf-syntax-ns# > .<br>
+@prefix xsd: < http://www.w3.org/2001/XMLSchema# > .<br>
 :HappyPerson a owl:Class ;<br>
 &emsp;    owl:equivalentClass [<br>
 &emsp;    a owl:Class ;<br>
